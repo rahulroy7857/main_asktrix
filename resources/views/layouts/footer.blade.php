@@ -55,8 +55,8 @@
                 <h3 class="text-white font-semibold mb-6">Services</h3>
                 <ul class="space-y-3">
                     <li><a href="{{ url('incorporation') }}" class="text-white hover:text-blue-200 transition-colors">Incorporation</a></li>
-                    <li><a href="{{ url('accounting') }}" class="text-white hover:text-blue-200 transition-colors">Accounting</a></li>
-                    <li><a href="{{ url('registration') }}" class="text-white hover:text-blue-200 transition-colors">Registration</a></li>
+                    <li><a href="{{ url('accounting-registration') }}" class="text-white hover:text-blue-200 transition-colors">Accounting</a></li>
+                    <li><a href="{{ url('registrations') }}" class="text-white hover:text-blue-200 transition-colors">Registration</a></li>
                     <li><a href="{{ url('trademark') }}" class="text-white hover:text-blue-200 transition-colors">Trademark</a></li>
                     <li><a href="{{ url('license-registration') }}" class="text-white hover:text-blue-200 transition-colors">License Registration</a></li>
                     <li><a href="{{ url('roc-registrar-of-companies') }}" class="text-white hover:text-blue-200 transition-colors">ROC</a></li>
