@@ -39,7 +39,7 @@
             <!-- Company Links -->
             <div>
                 <ul class="space-y-3">
-                    <li><a href="#" class="text-white hover:text-blue-200 transition-colors">Home</a></li>
+                    <li><a href="{{ url('/') }}" class="text-white hover:text-blue-200 transition-colors">Home</a></li>
                     <li><a href="#" class="text-white hover:text-blue-200 transition-colors">About Us</a></li>
                     <li><a href="#" class="text-white hover:text-blue-200 transition-colors">Contact us</a></li>
                     <li><a href="#" class="text-white hover:text-blue-200 transition-colors">Terms & Conditions</a></li>
@@ -54,19 +54,19 @@
             <div>
                 <h3 class="text-white font-semibold mb-6">Services</h3>
                 <ul class="space-y-3">
-                    <li><a href="#" class="text-white hover:text-blue-200 transition-colors">Incorporation</a></li>
-                    <li><a href="#" class="text-white hover:text-blue-200 transition-colors">Accounting</a></li>
-                    <li><a href="#" class="text-white hover:text-blue-200 transition-colors">Registration</a></li>
-                    <li><a href="#" class="text-white hover:text-blue-200 transition-colors">Trademark</a></li>
-                    <li><a href="#" class="text-white hover:text-blue-200 transition-colors">License Registration</a></li>
-                    <li><a href="#" class="text-white hover:text-blue-200 transition-colors">ROC</a></li>
+                    <li><a href="{{ url('incorporation') }}" class="text-white hover:text-blue-200 transition-colors">Incorporation</a></li>
+                    <li><a href="{{ url('accounting') }}" class="text-white hover:text-blue-200 transition-colors">Accounting</a></li>
+                    <li><a href="{{ url('registration') }}" class="text-white hover:text-blue-200 transition-colors">Registration</a></li>
+                    <li><a href="{{ url('trademark') }}" class="text-white hover:text-blue-200 transition-colors">Trademark</a></li>
+                    <li><a href="{{ url('license-registration') }}" class="text-white hover:text-blue-200 transition-colors">License Registration</a></li>
+                    <li><a href="{{ url('roc-registrar-of-companies') }}" class="text-white hover:text-blue-200 transition-colors">ROC</a></li>
                 </ul>
             </div>
         </div>
         
         <!-- Copyright -->
         <div class="border-t border-blue-700 mt-20 pt-8 text-center relative">
-            <p class="text-white text-sm">© 2025 Asktrix Rights Reserved.</p>           
+            <p class="text-white text-sm">© {{ date('Y') }} Asktrix Rights Reserved.</p>           
            
         </div>
     </div>
