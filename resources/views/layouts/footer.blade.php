@@ -11,8 +11,8 @@
                     <span class="text-2xl font-bold">Asktrix</span>
                 </div>
                 <div class="space-y-3">
-                    <p class="text-white">Asktrix Business Consulting - Brigade Senate 2, Hebbal Kempapura, Bengaluru, Karnataka 560094, INDIA</p>
-                    <p class="text-white text-sm">📞 Asktrix Contact: <strong>+91 7004670611</strong></p>
+                    <p class="text-white">Brigade Senate 2, Hebbal Kempapura, Bengaluru, Karnataka 560094, INDIA</p>
+                    
                     <div class="flex items-center space-x-2">
                         <i class="fas fa-phone text-white"></i>
                         <span class="text-white">+91 7004670611</span>
