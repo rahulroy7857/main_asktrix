@@ -1,2 +1,10 @@
 User-agent: *
-Disallow:
+Allow: /
+Disallow: /admin/
+Disallow: /storage/
+
+# Sitemap
+Sitemap: http://asktrix.com/sitemap.xml
+
+# Crawl-delay
+Crawl-delay: 1

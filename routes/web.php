@@ -8,10 +8,14 @@ use App\Http\Controllers\TrademarkController;
 use App\Http\Controllers\LicenseRegistrationController;
 use App\Http\Controllers\RocController;
 use App\Http\Controllers\ContactController;
+use App\Http\Controllers\SitemapController;
 
 Route::get('/', function () {
     return view('home');
 })->name('home');
+
+// Sitemap Route
+Route::get('/sitemap.xml', [SitemapController::class, 'index'])->name('sitemap');
 
 // Global Contact Route
 Route::post('/contact/submit', [ContactController::class, 'submit'])->name('contact.submit');

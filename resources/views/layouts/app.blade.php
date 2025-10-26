@@ -1,10 +1,75 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" itemscope itemtype="https://schema.org/Organization">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="csrf-token" content="{{ csrf_token() }}">
+    
+    <!-- Primary Meta Tags -->
     <title>@yield('title', 'Asktrix - Business Consulting Services')</title>
+    <meta name="title" content="@yield('meta_title', 'Asktrix - Expert Business Consulting Services in India')">
+    <meta name="description" content="@yield('meta_description', 'Asktrix provides expert business consulting services including company incorporation, GST registration, trademark registration, accounting, and compliance services across India.')">
+    <meta name="keywords" content="@yield('meta_keywords', 'business consulting, company incorporation, GST registration, trademark registration, accounting services, tax compliance, business registration, ROC filing, MSME registration, startup India')">
+    <meta name="author" content="Asktrix">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="English">
+    <meta name="revisit-after" content="7 days">
+    <meta name="geo.region" content="IN-KA">
+    <meta name="geo.placename" content="Bengaluru">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="{{ url()->current() }}">
+    <meta property="og:title" content="@yield('og_title', 'Asktrix - Business Consulting Services')">
+    <meta property="og:description" content="@yield('og_description', 'Expert business consulting services for company incorporation, GST, trademark, accounting and compliance.')">
+    <meta property="og:image" content="@yield('og_image', asset('favicon.ico'))">
+    <meta property="og:site_name" content="Asktrix">
+    <meta property="og:locale" content="en_US">
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="{{ url()->current() }}">
+    <meta name="twitter:title" content="@yield('twitter_title', 'Asktrix - Business Consulting Services')">
+    <meta name="twitter:description" content="@yield('twitter_description', 'Expert business consulting services for company incorporation, GST, trademark, accounting and compliance.')">
+    <meta name="twitter:image" content="@yield('twitter_image', asset('favicon.ico'))">
+    
+    <!-- Schema.org Structured Data for Organization -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Asktrix",
+        "url": "{{ url('/') }}",
+        "logo": "{{ asset('favicon.ico') }}",
+        "description": "Expert business consulting services including company incorporation, GST registration, trademark registration, accounting, and compliance services.",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Brigade Senate 2, Hebbal Kempapura",
+            "addressLocality": "Bengaluru",
+            "addressRegion": "Karnataka",
+            "postalCode": "560094",
+            "addressCountry": "IN"
+        },
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+91-7004670611",
+            "contactType": "customer service"
+        },
+        "sameAs": [
+            "https://www.facebook.com/asktrix",
+            "https://www.instagram.com/asktrix",
+            "https://www.linkedin.com/company/asktrix",
+            "https://twitter.com/asktrix"
+        ]
+    }
+    </script>
+    
+    <!-- Google Search Console / Verification Meta Tag -->
+    <meta name="google-site-verification" content="YOUR_GOOGLE_VERIFICATION_CODE_HERE">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}">
+    <link rel="apple-touch-icon" href="{{ asset('favicon.ico') }}">
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -275,6 +340,34 @@
         }
     </style>
     @yield('styles')
+    
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'GA_MEASUREMENT_ID');
+    </script>
+    
+    <!-- Facebook Pixel Code (Optional - Replace with your Pixel ID) -->
+    <!--
+    <script>
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window, document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', 'YOUR_PIXEL_ID');
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+        src="https://www.facebook.com/tr?id=YOUR_PIXEL_ID&ev=PageView&noscript=1"
+    /></noscript>
+    -->
 </head>
 <body class="bg-white">
     @include('layouts.header')

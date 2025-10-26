@@ -17,20 +17,21 @@
                         <span class="text-white">+91 7004670611</span>
                     </div>
                     <div class="flex space-x-4 mt-4">
-                        <a href="#" class="text-white hover:text-blue-200 transition-colors">
+                        <!-- Social Media Links -->
+                        <a href="https://www.facebook.com/share.php?u={{ urlencode(url()->current()) }}" target="_blank" rel="noopener noreferrer" class="text-white hover:text-blue-200 transition-colors" title="Share on Facebook">
                             <i class="fab fa-facebook text-xl"></i>
                         </a>
-                        <a href="#" class="text-white hover:text-blue-200 transition-colors">
-                            <i class="fab fa-instagram text-xl"></i>
-                        </a>
-                        <a href="#" class="text-white hover:text-blue-200 transition-colors">
-                            <i class="fab fa-linkedin text-xl"></i>
-                        </a>
-                        <a href="#" class="text-white hover:text-blue-200 transition-colors">
+                        <a href="https://twitter.com/intent/tweet?url={{ urlencode(url()->current()) }}" target="_blank" rel="noopener noreferrer" class="text-white hover:text-blue-200 transition-colors" title="Share on Twitter">
                             <i class="fab fa-twitter text-xl"></i>
                         </a>
-                        <a href="#" class="text-white hover:text-blue-200 transition-colors">
-                            <i class="fas fa-map-marker-alt text-xl"></i>
+                        <a href="https://www.linkedin.com/sharing/share-offsite/?url={{ urlencode(url()->current()) }}" target="_blank" rel="noopener noreferrer" class="text-white hover:text-blue-200 transition-colors" title="Share on LinkedIn">
+                            <i class="fab fa-linkedin text-xl"></i>
+                        </a>
+                        <a href="https://wa.me/?text={{ urlencode(url()->current()) }}" target="_blank" rel="noopener noreferrer" class="text-white hover:text-blue-200 transition-colors" title="Share on WhatsApp">
+                            <i class="fab fa-whatsapp text-xl"></i>
+                        </a>
+                        <a href="https://www.instagram.com/asktrix" target="_blank" rel="noopener noreferrer" class="text-white hover:text-blue-200 transition-colors" title="Follow on Instagram">
+                            <i class="fab fa-instagram text-xl"></i>
                         </a>
                     </div>
                 </div>
