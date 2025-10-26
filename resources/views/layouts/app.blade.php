@@ -35,33 +35,33 @@
     
     <!-- Schema.org Structured Data for Organization -->
     <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "Organization",
-        "name": "Asktrix",
-        "url": "{{ url('/') }}",
-        "logo": "{{ asset('favicon.ico') }}",
-        "description": "Expert business consulting services including company incorporation, GST registration, trademark registration, accounting, and compliance services.",
-        "address": {
-            "@type": "PostalAddress",
-            "streetAddress": "Brigade Senate 2, Hebbal Kempapura",
-            "addressLocality": "Bengaluru",
-            "addressRegion": "Karnataka",
-            "postalCode": "560094",
-            "addressCountry": "IN"
-        },
-        "contactPoint": {
-            "@type": "ContactPoint",
-            "telephone": "+91-7004670611",
-            "contactType": "customer service"
-        },
-        "sameAs": [
-            "https://www.facebook.com/asktrix",
-            "https://www.instagram.com/asktrix",
-            "https://www.linkedin.com/company/asktrix",
-            "https://twitter.com/asktrix"
+    {!! json_encode([
+        '@context' => 'https://schema.org',
+        '@type' => 'Organization',
+        'name' => 'Asktrix',
+        'url' => url('/'),
+        'logo' => asset('favicon.ico'),
+        'description' => 'Expert business consulting services including company incorporation, GST registration, trademark registration, accounting, and compliance services.',
+        'address' => [
+            '@type' => 'PostalAddress',
+            'streetAddress' => 'Brigade Senate 2, Hebbal Kempapura',
+            'addressLocality' => 'Bengaluru',
+            'addressRegion' => 'Karnataka',
+            'postalCode' => '560094',
+            'addressCountry' => 'IN'
+        ],
+        'contactPoint' => [
+            '@type' => 'ContactPoint',
+            'telephone' => '+91-7004670611',
+            'contactType' => 'customer service'
+        ],
+        'sameAs' => [
+            'https://www.facebook.com/asktrix',
+            'https://www.instagram.com/asktrix',
+            'https://www.linkedin.com/company/asktrix',
+            'https://twitter.com/asktrix'
         ]
-    }
+    ], JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES) !!}
     </script>
     
     <!-- Google Search Console / Verification Meta Tag -->
