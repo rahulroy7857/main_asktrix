@@ -95,7 +95,8 @@
     </script>
     
     <!-- Google Search Console / Verification Meta Tag -->
-    <meta name="google-site-verification" content="YOUR_GOOGLE_VERIFICATION_CODE_HERE">
+    {{-- <meta name="google-site-verification" content="google-site-verification=Lj8W6Nlb77qiCTHSXlTgzxUUkanWZF53eKRu1F_L52g"> --}}
+    <meta name="google-site-verification" content="Lj8W6Nlb77qiCTHSXlTgzxUUkanWZF53eKRu1F_L52g" />
     
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}">
