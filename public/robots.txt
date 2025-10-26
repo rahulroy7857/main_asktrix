@@ -4,7 +4,8 @@ Disallow: /admin/
 Disallow: /storage/
 
 # Sitemap
-Sitemap: http://asktrix.com/sitemap.xml
+Sitemap: https://www.asktrix.com/sitemap.xml
+Sitemap: https://asktrix.com/sitemap.xml
 
 # Crawl-delay
 Crawl-delay: 1

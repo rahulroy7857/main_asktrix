@@ -6,32 +6,37 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
     
     <!-- Primary Meta Tags -->
-    <title>@yield('title', 'Asktrix - Business Consulting Services')</title>
-    <meta name="title" content="@yield('meta_title', 'Asktrix - Expert Business Consulting Services in India')">
-    <meta name="description" content="@yield('meta_description', 'Asktrix provides expert business consulting services including company incorporation, GST registration, trademark registration, accounting, and compliance services across India.')">
-    <meta name="keywords" content="@yield('meta_keywords', 'business consulting, company incorporation, GST registration, trademark registration, accounting services, tax compliance, business registration, ROC filing, MSME registration, startup India')">
+    <title>@yield('title', 'Asktrix | Asktrix.com - Business Consulting Services India')</title>
+    <meta name="title" content="@yield('meta_title', 'Asktrix | #1 Business Consulting Services - GST, Company Registration India')">
+    <meta name="description" content="@yield('meta_description', 'Asktrix - Leading business consulting services provider in India. Expert services for GST registration, company incorporation, trademark registration, accounting, tax compliance. Visit Asktrix for trusted business solutions.')">
+    <meta name="keywords" content="@yield('meta_keywords', 'Asktrix, Asktrix.com, asktrix business consulting, asktrix GST registration, asktrix company incorporation, asktrix trademark, asktrix accounting, asktrix India, business consulting India, company incorporation, GST registration, trademark registration, accounting services, tax compliance, business registration, ROC filing, MSME registration, startup India, asktrix consulting')">
     <meta name="author" content="Asktrix">
-    <meta name="robots" content="index, follow">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
     <meta name="language" content="English">
-    <meta name="revisit-after" content="7 days">
+    <meta name="revisit-after" content="1 day">
     <meta name="geo.region" content="IN-KA">
-    <meta name="geo.placename" content="Bengaluru">
+    <meta name="geo.placename" content="Bengaluru, Karnataka, India">
+    <link rel="canonical" href="@yield('canonical_url', url()->current())">
     
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="{{ url()->current() }}">
-    <meta property="og:title" content="@yield('og_title', 'Asktrix - Business Consulting Services')">
-    <meta property="og:description" content="@yield('og_description', 'Expert business consulting services for company incorporation, GST, trademark, accounting and compliance.')">
+    <meta property="og:url" content="@yield('canonical_url', url()->current())">
+    <meta property="og:title" content="@yield('og_title', 'Asktrix | Business Consulting Services India - GST, Company Registration')">
+    <meta property="og:description" content="@yield('og_description', 'Asktrix - Trusted business consulting services in India. Expert GST registration, company incorporation, trademark, accounting and compliance services.')">
     <meta property="og:image" content="@yield('og_image', asset('favicon.ico'))">
     <meta property="og:site_name" content="Asktrix">
     <meta property="og:locale" content="en_US">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
     
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:url" content="{{ url()->current() }}">
-    <meta name="twitter:title" content="@yield('twitter_title', 'Asktrix - Business Consulting Services')">
-    <meta name="twitter:description" content="@yield('twitter_description', 'Expert business consulting services for company incorporation, GST, trademark, accounting and compliance.')">
+    <meta name="twitter:url" content="@yield('canonical_url', url()->current())">
+    <meta name="twitter:title" content="@yield('twitter_title', 'Asktrix | Business Consulting Services - GST & Company Registration India')">
+    <meta name="twitter:description" content="@yield('twitter_description', 'Asktrix - Leading business consulting in India. Expert services for GST registration, company incorporation, trademark, accounting and compliance.')">
     <meta name="twitter:image" content="@yield('twitter_image', asset('favicon.ico'))">
+    <meta name="twitter:site" content="@asktrix">
+    <meta name="twitter:creator" content="@asktrix">
     
     <!-- Schema.org Structured Data for Organization -->
     <script type="application/ld+json">
@@ -39,9 +44,10 @@
         '@context' => 'https://schema.org',
         '@type' => 'Organization',
         'name' => 'Asktrix',
+        'alternateName' => ['AskTrix', 'AskTrix.com', 'Asktrix Business Consulting'],
         'url' => url('/'),
         'logo' => asset('favicon.ico'),
-        'description' => 'Expert business consulting services including company incorporation, GST registration, trademark registration, accounting, and compliance services.',
+        'description' => 'Asktrix - Leading business consulting services provider in India. Expert GST registration, company incorporation, trademark registration, accounting, and compliance services across India.',
         'address' => [
             '@type' => 'PostalAddress',
             'streetAddress' => 'Brigade Senate 2, Hebbal Kempapura',
@@ -53,13 +59,37 @@
         'contactPoint' => [
             '@type' => 'ContactPoint',
             'telephone' => '+91-7004670611',
-            'contactType' => 'customer service'
+            'contactType' => 'customer service',
+            'areaServed' => 'IN',
+            'availableLanguage' => ['English', 'Hindi']
         ],
         'sameAs' => [
             'https://www.facebook.com/asktrix',
             'https://www.instagram.com/asktrix',
             'https://www.linkedin.com/company/asktrix',
             'https://twitter.com/asktrix'
+        ],
+        'areaServed' => 'IN',
+        'offers' => [
+            '@type' => 'Offer',
+            'name' => 'Business Consulting Services',
+            'description' => 'Company incorporation, GST registration, trademark registration, accounting and compliance services'
+        ]
+    ], JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES) !!}
+    </script>
+    
+    <!-- Website Schema -->
+    <script type="application/ld+json">
+    {!! json_encode([
+        '@context' => 'https://schema.org',
+        '@type' => 'WebSite',
+        'name' => 'Asktrix',
+        'url' => url('/'),
+        'description' => 'Asktrix - Leading business consulting services in India',
+        'potentialAction' => [
+            '@type' => 'SearchAction',
+            'target' => url('/search?q={search_term_string}'),
+            'query-input' => 'required name=search_term_string'
         ]
     ], JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES) !!}
     </script>

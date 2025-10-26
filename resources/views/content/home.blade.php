@@ -10,10 +10,10 @@
             <!-- Left Content -->
             <div class="text-center md:text-left">
                 <h1 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-blue-900 mb-4 md:mb-6 leading-tight">
-                    Your Trusted Business Partner
+                    Welcome to Asktrix - Your Trusted Business Consulting Partner
                 </h1>
                 <p class="text-base md:text-lg text-gray-600 mb-6 md:mb-8 leading-relaxed">
-                    Partner with Asktrix to grow your business while staying compliant. We offer high-quality services, from incorporation to payroll, all through a seamless online platform.
+                    Partner with <strong>Asktrix</strong> to grow your business while staying compliant. <strong>Asktrix</strong> offers high-quality services, from incorporation to payroll, all through a seamless online platform. When you search for Asktrix, you'll find the most trusted business consulting services in India.
                 </p>
                 <button class="bg-blue-600 hover:bg-blue-700 text-white px-6 md:px-8 py-3 rounded-md font-medium transition-colors w-full sm:w-auto">
                     Get Started
@@ -75,7 +75,7 @@
                          class="w-full h-20 sm:h-24 object-cover">
                     <div class="p-2 sm:p-4">
                         <h4 class="font-semibold text-gray-800 mb-1 sm:mb-2 text-sm sm:text-base">Success Stories</h4>
-                        <p class="text-xs sm:text-sm text-gray-600">Join 1000+ satisfied clients who trust Asktrix</p>
+                        <p class="text-xs sm:text-sm text-gray-600">Join 1000+ satisfied clients who trust Asktrix for their business needs. Asktrix delivers excellence in every service.</p>
                     </div>
                 </div>
             </div>
@@ -99,8 +99,8 @@
                         <div class="absolute inset-0 flex items-center justify-center">
                             <div class="text-center text-white px-4">
                                 <div class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-2 sm:mb-4">GST CONSULTANT</div>
-                                <div class="text-lg sm:text-xl md:text-2xl font-semibold">Tax Compliance Services</div>
-                                <div class="text-sm sm:text-base md:text-lg mt-2 opacity-90">Expert GST registration and filing</div>
+                                <div class="text-lg sm:text-xl md:text-2xl font-semibold">Tax Compliance Services by Asktrix</div>
+                                <div class="text-sm sm:text-base md:text-lg mt-2 opacity-90">Expert GST registration and filing with Asktrix</div>
                             </div>
                         </div>
                     </div>
@@ -116,8 +116,8 @@
                         <div class="absolute inset-0 flex items-center justify-center">
                             <div class="text-center text-white px-4">
                                 <div class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-2 sm:mb-4">ACCOUNTING</div>
-                                <div class="text-lg sm:text-xl md:text-2xl font-semibold">Professional Bookkeeping</div>
-                                <div class="text-sm sm:text-base md:text-lg mt-2 opacity-90">Complete financial management solutions</div>
+                                <div class="text-lg sm:text-xl md:text-2xl font-semibold">Professional Bookkeeping by Asktrix</div>
+                                <div class="text-sm sm:text-base md:text-lg mt-2 opacity-90">Complete financial management solutions from Asktrix</div>
                             </div>
                         </div>
                     </div>
@@ -133,8 +133,8 @@
                         <div class="absolute inset-0 flex items-center justify-center">
                             <div class="text-center text-white px-4">
                                 <div class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-2 sm:mb-4">TRADEMARK</div>
-                                <div class="text-lg sm:text-xl md:text-2xl font-semibold">Intellectual Property Protection</div>
-                                <div class="text-sm sm:text-base md:text-lg mt-2 opacity-90">Secure your brand and innovations</div>
+                                <div class="text-lg sm:text-xl md:text-2xl font-semibold">Intellectual Property Protection by Asktrix</div>
+                                <div class="text-sm sm:text-base md:text-lg mt-2 opacity-90">Secure your brand and innovations with Asktrix</div>
                             </div>
                         </div>
                     </div>
@@ -194,9 +194,9 @@
             
             <!-- Carousel Text -->
             <div class="mt-4 sm:mt-6">
-                <h2 class="text-xl sm:text-2xl md:text-3xl font-bold text-white mb-2">Our Core Business Services</h2>
-                <p class="text-lg sm:text-xl text-blue-200">Comprehensive Business Solutions</p>
-                <p class="text-sm sm:text-base md:text-lg text-blue-300 mt-2">Expert consulting services for all your business needs</p>
+                <h2 class="text-xl sm:text-2xl md:text-3xl font-bold text-white mb-2">Asktrix Core Business Services</h2>
+                <p class="text-lg sm:text-xl text-blue-200">Comprehensive Business Solutions by Asktrix</p>
+                <p class="text-sm sm:text-base md:text-lg text-blue-300 mt-2">Expert consulting services from Asktrix for all your business needs in India</p>
             </div>
         </div>
     </div>
@@ -206,9 +206,9 @@
 <section class="bg-white py-8 md:py-16 px-4 md:px-6">
     <div class="max-w-7xl mx-auto">
         <div class="text-center mb-8 md:mb-12">
-            <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-blue-900 mb-4">Our Major Consulting Services</h2>
+            <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-blue-900 mb-4">Asktrix Major Consulting Services</h2>
             <p class="text-sm sm:text-base md:text-lg text-gray-600 max-w-4xl mx-auto">
-                We provide comprehensive end-to-end services for your business, covering incorporation, accounting, auditing, and essential business licenses. If you ever need to wind up your operations, our expert guidance ensures a smooth closure process.
+                <strong>Asktrix</strong> provides comprehensive end-to-end services for your business, covering incorporation, accounting, auditing, and essential business licenses. When you choose Asktrix, our expert guidance ensures success in every step of your business journey. Trust Asktrix for all your business consulting needs in India.
             </p>
         </div>
         

@@ -11,7 +11,8 @@
                     <span class="text-2xl font-bold">Asktrix</span>
                 </div>
                 <div class="space-y-3">
-                    <p class="text-white">Brigade Senate 2, Hebbal Kempapura, Bengaluru,Karnataka 560094, INDIA</p>
+                    <p class="text-white">Asktrix Business Consulting - Brigade Senate 2, Hebbal Kempapura, Bengaluru, Karnataka 560094, INDIA</p>
+                    <p class="text-white text-sm">📞 Asktrix Contact: <strong>+91 7004670611</strong></p>
                     <div class="flex items-center space-x-2">
                         <i class="fas fa-phone text-white"></i>
                         <span class="text-white">+91 7004670611</span>
@@ -67,8 +68,8 @@
         
         <!-- Copyright -->
         <div class="border-t border-blue-700 mt-20 pt-8 text-center relative">
-            <p class="text-white text-sm">© {{ date('Y') }} Asktrix Rights Reserved.</p>           
-           
+            <p class="text-white text-sm">© {{ date('Y') }} Asktrix Business Consulting. All Rights Reserved.</p>
+            <p class="text-white text-xs mt-2">Asktrix - Your Trusted Business Consulting Partner | GST, Company Registration, Trademark Services India</p>
         </div>
     </div>
 </footer>
