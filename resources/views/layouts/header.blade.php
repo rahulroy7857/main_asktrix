@@ -18,7 +18,7 @@
             <!-- Incorporation Dropdown -->
             <div class="relative group">
                 <a href="{{ route('incorporation') }}" class="hover:text-blue-600 transition-colors flex items-center text-gray-800 text-sm">
-                    Incorporation ss <i class="fas fa-chevron-down ml-1 text-xs"></i>
+                    Incorporation<i class="fas fa-chevron-down ml-1 text-xs"></i>
                 </a>
                 <div class="absolute top-full left-0 mt-4 w-80 bg-white rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform translate-y-2 group-hover:translate-y-0">
                     <div class="p-6">
