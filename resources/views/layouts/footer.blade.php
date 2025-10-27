@@ -42,8 +42,8 @@
             <div>
                 <ul class="space-y-3">
                     <li><a href="{{ url('/') }}" class="text-white hover:text-blue-200 transition-colors">Home</a></li>
-                    <li><a href="#" class="text-white hover:text-blue-200 transition-colors">About Us</a></li>
-                    <li><a href="#" class="text-white hover:text-blue-200 transition-colors">Contact us</a></li>
+                    <li><a href="{{ url('/about-us') }}" class="text-white hover:text-blue-200 transition-colors">About Us</a></li>
+                    <li><a href="{{ route('contact-us') }}" class="text-white hover:text-blue-200 transition-colors">Contact us</a></li>
                     <li><a href="#" class="text-white hover:text-blue-200 transition-colors">Terms & Conditions</a></li>
                     <li><a href="#" class="text-white hover:text-blue-200 transition-colors">Refund Policy</a></li>
                     <li><a href="#" class="text-white hover:text-blue-200 transition-colors">Privacy Policy</a></li>

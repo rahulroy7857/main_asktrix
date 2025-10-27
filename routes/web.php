@@ -10,9 +10,13 @@ use App\Http\Controllers\RocController;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\SitemapController;
 
-Route::get('/', function () {
-    return view('home');
-})->name('home');
+Route::get('/', function () {return view('home');})->name('home');
+
+// About Us Route
+Route::get('about-us/', function () {return view('about-us');})->name('about-us');
+
+// Contact Us Route
+Route::get('contact-us/', function () {return view('contact-us');})->name('contact-us');
 
 // Sitemap Route
 Route::get('/sitemap.xml', [SitemapController::class, 'index'])->name('sitemap');
@@ -101,6 +105,4 @@ Route::get('authorized-capital/', [RocController::class, 'authorizedCapital'])->
 Route::get('change-of-registered-office/', [RocController::class, 'changeOfRegisteredOffice'])->name('change-of-registered-office');
 
 // Fallback route for invalid URLs - redirect to home page
-Route::fallback(function () {
-    return redirect('/');
-});
+Route::fallback(function () {return redirect('/');});
