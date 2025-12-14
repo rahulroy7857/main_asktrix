@@ -10,7 +10,7 @@
             <!-- Left Content -->
             <div class="text-center md:text-left">
                 <h1 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-blue-900 mb-4 md:mb-6 leading-tight">
-                    Your Trusted Business Partner
+                    Your Trusted Business Partner rahul
                 </h1>
                 <p class="text-base md:text-lg text-gray-600 mb-6 md:mb-8 leading-relaxed">
                     Partner with <strong>Asktrix</strong> to grow your business while staying compliant. <strong>Asktrix</strong> offers high-quality services, from incorporation to payroll, all through a seamless online platform. When you search for Asktrix, you'll find the most trusted business consulting services in India.
