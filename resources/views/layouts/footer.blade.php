@@ -44,11 +44,11 @@
                     <li><a href="{{ url('/') }}" class="text-white hover:text-blue-200 transition-colors">Home</a></li>
                     <li><a href="{{ url('/about-us') }}" class="text-white hover:text-blue-200 transition-colors">About Us</a></li>
                     <li><a href="{{ route('contact-us') }}" class="text-white hover:text-blue-200 transition-colors">Contact us</a></li>
-                    <li><a href="#" class="text-white hover:text-blue-200 transition-colors">Terms & Conditions</a></li>
-                    <li><a href="#" class="text-white hover:text-blue-200 transition-colors">Refund Policy</a></li>
-                    <li><a href="#" class="text-white hover:text-blue-200 transition-colors">Privacy Policy</a></li>
-                    <li><a href="#" class="text-white hover:text-blue-200 transition-colors">Disclaimer</a></li>
-                    <li><a href="#" class="text-white hover:text-blue-200 transition-colors">Blog</a></li>
+                    <li><a href="{{ route('terms-conditions') }}" class="text-white hover:text-blue-200 transition-colors">Terms & Conditions</a></li>
+                    <li><a href="{{ route('cancellation-refund') }}" class="text-white hover:text-blue-200 transition-colors">Refund Policy</a></li>
+                    <li><a href="{{ route('privacy-policy') }}" class="text-white hover:text-blue-200 transition-colors">Privacy Policy</a></li>
+                    <li><a href="{{ route('disclaimer') }}" class="text-white hover:text-blue-200 transition-colors">Disclaimer</a></li>
+                    <!-- <li><a href="#" class="text-white hover:text-blue-200 transition-colors">Blog</a></li> -->
                 </ul>
             </div>
             

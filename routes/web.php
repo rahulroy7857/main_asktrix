@@ -18,6 +18,26 @@ Route::get('about-us/', function () {return view('about-us');})->name('about-us'
 // Contact Us Route
 Route::get('contact-us/', function () {return view('contact-us');})->name('contact-us');
 
+// Terms and Conditions Route
+Route::get('terms-conditions/', function () {
+    return view('terms-conditions');
+})->name('terms-conditions');
+
+// Cancellation & Refund Policy Route
+Route::get('cancellation-refund/', function () {
+    return view('cancellation-refund');
+})->name('cancellation-refund');
+
+// Privacy Policy Route
+Route::get('privacy-policy/', function () {
+    return view('privacy-policy');
+})->name('privacy-policy');
+
+// Disclaimer Route
+Route::get('disclaimer/', function () {
+    return view('disclaimer');
+})->name('disclaimer');
+
 // Sitemap Route
 Route::get('/sitemap.xml', [SitemapController::class, 'index'])->name('sitemap');
 
