@@ -5,10 +5,11 @@
         <a href="{{route('home')}}">
             <div class="flex items-center space-x-2">
             
-                    <div class="w-8 h-8 bg-blue-600 rounded-sm flex items-center justify-center">
-                        <div class="w-4 h-4 bg-white transform rotate-45"></div>
+                    <div class="h-8  rounded-sm flex items-center justify-center">
+                        <img src="{{ asset('media/asktric_logo.png') }}" alt="Asktrix" class="w-full h-full object-cover">
+                        <!-- <div class="w-4 h-4 bg-white transform rotate-45"></div> -->
                     </div>
-                    <span class="text-lg font-bold text-gray-800">Asktrix</span>
+                    <!-- <span class="text-lg font-bold text-gray-800">Asktrix</span> -->
                 
             </div>
         </a>

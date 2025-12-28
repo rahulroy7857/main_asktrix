@@ -23,7 +23,7 @@
     <meta property="og:url" content="@yield('canonical_url', url()->current())">
     <meta property="og:title" content="@yield('og_title', 'Asktrix | Business Consulting Services India - GST, Company Registration')">
     <meta property="og:description" content="@yield('og_description', 'Asktrix - Trusted business consulting services in India. Expert GST registration, company incorporation, trademark, accounting and compliance services.')">
-    <meta property="og:image" content="@yield('og_image', asset('favicon.ico'))">
+    <meta property="og:image" content="@yield('og_image', asset('media/ask_icon.ico'))">
     <meta property="og:site_name" content="Asktrix">
     <meta property="og:locale" content="en_US">
     <meta property="og:image:width" content="1200">
@@ -99,8 +99,8 @@
     <meta name="google-site-verification" content="Lj8W6Nlb77qiCTHSXlTgzxUUkanWZF53eKRu1F_L52g" />
     
     <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}">
-    <link rel="apple-touch-icon" href="{{ asset('favicon.ico') }}">
+    <link rel="icon" type="image/x-icon" href="{{ asset('media/ask_icon.ico') }}">
+    <link rel="apple-touch-icon" href="{{ asset('media/ask_icon.ico') }}">
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">

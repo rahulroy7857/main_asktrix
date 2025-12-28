@@ -5,13 +5,17 @@
             <!-- Contact Info -->
             <div>
                 <div class="flex items-center space-x-2 mb-6">
-                    <div class="w-8 h-8 bg-white rounded-sm flex items-center justify-center">
-                        <div class="w-4 h-4 bg-blue-600 transform rotate-45"></div>
-                    </div>
-                    <span class="text-2xl font-bold">Asktrix</span>
+                    <a href="{{route('home')}}">
+                        <div class="h-8 bg-white rounded-sm flex items-center justify-center">
+                            <img src="{{ asset('media/asktric_logo.png') }}" alt="Asktrix" class="w-full h-full object-cover object-center   ">
+                            <!-- <div class="w-4 h-4 bg-blue-600 transform rotate-45"></div> -->
+                        </div>
+                    </a>
+                    <!-- <span class="text-2xl font-bold">Asktrix</span> -->
                 </div>
                 <div class="space-y-3">
-                    <p class="text-white">Brigade Senate 2, Hebbal Kempapura, Bengaluru, Karnataka 560094, INDIA</p>
+                    <!-- <p class="text-white">Brigade Senate 2, Hebbal Kempapura, Bengaluru, Karnataka 560094, INDIA</p> -->
+                    <p class="text-white">No. 19/35, Anna Salai,near Nandanam, Little Mount, Saidapet, Chennai, Tamil Nadu 600015</p>
                     
                     <div class="flex items-center space-x-2">
                         <i class="fas fa-phone text-white"></i>
