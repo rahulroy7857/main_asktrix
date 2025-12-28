@@ -339,13 +339,13 @@
             <!-- HDFC Bank -->
             <div class="bg-white border border-gray-200 px-2 md:px-4 py-4 md:py-6 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300">
                 <div class="flex flex-col items-center">
-                    <img src="https://logos-world.net/wp-content/uploads/2020/04/HDFC-Bank-Logo.png" 
+                    <img src="{{ asset('media/bank/hdfc_bank.jpg') }}" 
                          alt="HDFC Bank Logo" 
                          class="h-8 md:h-12 w-auto mb-2 md:mb-3 object-contain"
                          onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-                    <div class="w-16 h-12 bg-red-100 rounded flex items-center justify-center mb-3" style="display:none;">
+                    <!-- <div class="w-16 h-12 bg-red-100 rounded flex items-center justify-center mb-3" style="display:none;">
                         <span class="text-red-600 font-bold text-sm">HDFC</span>
-                    </div>
+                    </div> -->
                     <span class="text-xs md:text-sm font-semibold text-gray-700">HDFC</span>
                 </div>
             </div>
@@ -353,13 +353,13 @@
             <!-- ICICI Bank -->
             <div class="bg-white border border-gray-200 px-2 md:px-4 py-4 md:py-6 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300">
                 <div class="flex flex-col items-center">
-                    <img src="https://logos-world.net/wp-content/uploads/2020/04/ICICI-Bank-Logo.png" 
+                    <img src="{{ asset('media/bank/ICICI_Bank_Logo.png') }}" 
                          alt="ICICI Bank Logo" 
                          class="h-8 md:h-12 w-auto mb-2 md:mb-3 object-contain"
                          onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-                    <div class="w-16 h-12 bg-orange-100 rounded flex items-center justify-center mb-3" style="display:none;">
+                    <!-- <div class="w-16 h-12 bg-orange-100 rounded flex items-center justify-center mb-3" style="display:none;">
                         <span class="text-orange-600 font-bold text-sm">ICICI</span>
-                    </div>
+                    </div> -->
                     <span class="text-xs md:text-sm font-semibold text-gray-700">ICICI</span>
                 </div>
             </div>
@@ -367,13 +367,13 @@
             <!-- Axis Bank -->
             <div class="bg-white border border-gray-200 px-2 md:px-4 py-4 md:py-6 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300">
                 <div class="flex flex-col items-center">
-                    <img src="https://logos-world.net/wp-content/uploads/2020/04/Axis-Bank-Logo.png" 
+                    <img src="{{ asset('media/bank/Axis_Bank_logo.png') }}" 
                          alt="Axis Bank Logo" 
                          class="h-8 md:h-12 w-auto mb-2 md:mb-3 object-contain"
                          onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-                    <div class="w-16 h-12 bg-pink-100 rounded flex items-center justify-center mb-3" style="display:none;">
+                    <!-- <div class="w-16 h-12 bg-pink-100 rounded flex items-center justify-center mb-3" style="display:none;">
                         <span class="text-pink-600 font-bold text-sm">AXIS</span>
-                    </div>
+                    </div> -->
                     <span class="text-xs md:text-sm font-semibold text-gray-700">AXIS</span>
                 </div>
             </div>
@@ -381,13 +381,13 @@
             <!-- Yes Bank -->
             <div class="bg-white border border-gray-200 px-2 md:px-4 py-4 md:py-6 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300">
                 <div class="flex flex-col items-center">
-                    <img src="https://logos-world.net/wp-content/uploads/2020/04/Yes-Bank-Logo.png" 
+                    <img src="{{ asset('media/bank/yesbank_logo.png') }}" 
                          alt="Yes Bank Logo" 
                          class="h-8 md:h-12 w-auto mb-2 md:mb-3 object-contain"
                          onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-                    <div class="w-16 h-12 bg-green-100 rounded flex items-center justify-center mb-3" style="display:none;">
+                    <!-- <div class="w-16 h-12 bg-green-100 rounded flex items-center justify-center mb-3" style="display:none;">
                         <span class="text-green-600 font-bold text-sm">YES</span>
-                    </div>
+                    </div> -->
                     <span class="text-xs md:text-sm font-semibold text-gray-700">YES BANK</span>
                 </div>
             </div>
@@ -395,13 +395,13 @@
             <!-- RBL Bank -->
             <div class="bg-white border border-gray-200 px-2 md:px-4 py-4 md:py-6 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300">
                 <div class="flex flex-col items-center">
-                    <img src="https://logos-world.net/wp-content/uploads/2020/04/RBL-Bank-Logo.png" 
+                    <img src="{{ asset('media/bank/rbl_bank.png') }}" 
                          alt="RBL Bank Logo" 
                          class="h-8 md:h-12 w-auto mb-2 md:mb-3 object-contain"
                          onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-                    <div class="w-16 h-12 bg-purple-100 rounded flex items-center justify-center mb-3" style="display:none;">
+                    <!-- <div class="w-16 h-12 bg-purple-100 rounded flex items-center justify-center mb-3" style="display:none;">
                         <span class="text-purple-600 font-bold text-sm">RBL</span>
-                    </div>
+                    </div> -->
                     <span class="text-xs md:text-sm font-semibold text-gray-700">RBL BANK</span>
                 </div>
             </div>
@@ -409,13 +409,13 @@
             <!-- IDFC First Bank -->
             <div class="bg-white border border-gray-200 px-2 md:px-4 py-4 md:py-6 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300">
                 <div class="flex flex-col items-center">
-                    <img src="https://logos-world.net/wp-content/uploads/2020/04/IDFC-First-Bank-Logo.png" 
+                    <img src="{{ asset('media/bank/IDFC_First_Bank.png') }}" 
                          alt="IDFC First Bank Logo" 
                          class="h-8 md:h-12 w-auto mb-2 md:mb-3 object-contain"
                          onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-                    <div class="w-16 h-12 bg-indigo-100 rounded flex items-center justify-center mb-3" style="display:none;">
+                    <!-- <div class="w-16 h-12 bg-indigo-100 rounded flex items-center justify-center mb-3" style="display:none;">
                         <span class="text-indigo-600 font-bold text-sm">IDFC</span>
-                    </div>
+                    </div> -->
                     <span class="text-xs md:text-sm font-semibold text-gray-700">IDFC</span>
                 </div>
             </div>
