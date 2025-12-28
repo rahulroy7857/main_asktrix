@@ -243,7 +243,7 @@
                         <i class="fas fa-map-marker-alt text-pink-600 text-2xl"></i>
                     </div>
                     <h3 class="text-xl font-bold text-gray-800 mb-2">Our Location</h3>
-                    <p class="text-gray-600">Brigade Senate 2, Hebbal Kempapura, Bengaluru, Karnataka 560094, INDIA</p>
+                    <p class="text-gray-600">No. 19/35, Anna Salai,near Nandanam, Little Mount, Saidapet, Chennai, Tamil Nadu 600015</p>
                 </div>
 
                 <!-- Phone Card -->
