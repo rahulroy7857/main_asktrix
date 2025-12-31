@@ -42,9 +42,9 @@
     <script type="application/ld+json">
     {!! json_encode([
         '@context' => 'http://schema.org',
-        '@type' => 'Organization',
+        '@type' => "Organization",
         'name' => 'Asktrix',
-        'alternateName' => ['AskTrix','asktrix' 'AskTrix.com','AskTrix.in','asktrix.com','asktrix.in','Asktrix Business Consulting', 'Asktrix GST Registration', 'Asktrix Company Registration', 'Asktrix Trademark Registration', 'Asktrix Accounting', 'Asktrix Compliance', 'Asktrix Tax Compliance', 'Asktrix Tax Registration', 'Asktrix Tax Filing', 'Asktrix Tax Planning', 'Asktrix Tax Preparation', 'Asktrix Tax Return', 'Asktrix Tax Return Preparation', 'Asktrix Tax Return Filing', 'Asktrix Tax Return Planning', 'Asktrix Tax Return Preparation', 'Asktrix Tax Return Filing', 'Asktrix Tax Return Planning'],
+        'alternateName' => ['AskTrix','asktrix','AskTrix.com','AskTrix.in','asktrix.com','asktrix.in','Asktrix Business Consulting', 'Asktrix GST Registration', 'Asktrix Company Registration', 'Asktrix Trademark Registration', 'Asktrix Accounting', 'Asktrix Compliance', 'Asktrix Tax Compliance', 'Asktrix Tax Registration', 'Asktrix Tax Filing', 'Asktrix Tax Planning', 'Asktrix Tax Preparation', 'Asktrix Tax Return', 'Asktrix Tax Return Preparation', 'Asktrix Tax Return Filing', 'Asktrix Tax Return Planning', 'Asktrix Tax Return Preparation', 'Asktrix Tax Return Filing', 'Asktrix Tax Return Planning'],
         'url' => url('/'),
         'logo' => asset('favicon.ico'),
         'description' => 'Asktrix - Leading business consulting services provider in India. Expert GST registration, company incorporation, trademark registration, accounting, and compliance services across India. Asktrix is a leading business consulting services provider in India. We provide expert services for GST registration, company incorporation, trademark registration, accounting, and compliance services across India.',
