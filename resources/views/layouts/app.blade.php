@@ -41,27 +41,27 @@
     <!-- Schema.org Structured Data for Organization -->
     <script type="application/ld+json">
     {!! json_encode([
-        '@context' => 'https://schema.org',
+        '@context' => 'http://schema.org',
         '@type' => 'Organization',
         'name' => 'Asktrix',
-        'alternateName' => ['AskTrix', 'AskTrix.com', 'Asktrix Business Consulting'],
+        'alternateName' => ['AskTrix','asktrix' 'AskTrix.com','AskTrix.in','asktrix.com','asktrix.in','Asktrix Business Consulting', 'Asktrix GST Registration', 'Asktrix Company Registration', 'Asktrix Trademark Registration', 'Asktrix Accounting', 'Asktrix Compliance', 'Asktrix Tax Compliance', 'Asktrix Tax Registration', 'Asktrix Tax Filing', 'Asktrix Tax Planning', 'Asktrix Tax Preparation', 'Asktrix Tax Return', 'Asktrix Tax Return Preparation', 'Asktrix Tax Return Filing', 'Asktrix Tax Return Planning', 'Asktrix Tax Return Preparation', 'Asktrix Tax Return Filing', 'Asktrix Tax Return Planning'],
         'url' => url('/'),
         'logo' => asset('favicon.ico'),
-        'description' => 'Asktrix - Leading business consulting services provider in India. Expert GST registration, company incorporation, trademark registration, accounting, and compliance services across India.',
+        'description' => 'Asktrix - Leading business consulting services provider in India. Expert GST registration, company incorporation, trademark registration, accounting, and compliance services across India. Asktrix is a leading business consulting services provider in India. We provide expert services for GST registration, company incorporation, trademark registration, accounting, and compliance services across India.',
         'address' => [
             '@type' => 'PostalAddress',
-            'streetAddress' => 'Brigade Senate 2, Hebbal Kempapura',
-            'addressLocality' => 'Bengaluru',
-            'addressRegion' => 'Karnataka',
-            'postalCode' => '560094',
-            'addressCountry' => 'IN'
+            'streetAddress' => 'No. 19/35, Anna Salai,near Nandanam, Little Mount, Saidapet',
+            'addressLocality' => 'Chennai',
+            'addressRegion' => 'Tamil Nadu',
+            'postalCode' => '600015',
+            'addressCountry' => 'India'
         ],
         'contactPoint' => [
             '@type' => 'ContactPoint',
             'telephone' => '+91-7004670611',
             'contactType' => 'customer service',
             'areaServed' => 'IN',
-            'availableLanguage' => ['English', 'Hindi']
+            'availableLanguage' => ['English', 'Hindi', 'Tamil', 'Kannada', 'Telugu', 'Marathi', 'Gujarati', 'Punjabi', 'Urdu', 'Bengali', 'Malayalam', 'Odia', 'Assamese', 'Nepali', 'Sindhi', 'Konkani', 'Maithili', 'Manipuri', 'Mizo', 'Nepali', 'Santali', 'Sindhi', 'Tulu', 'Yiddish', 'Zulu']
         ],
         'sameAs' => [
             'https://www.facebook.com/asktrix',
@@ -69,7 +69,7 @@
             'https://www.linkedin.com/company/asktrix',
             'https://twitter.com/asktrix'
         ],
-        'areaServed' => 'IN',
+        'areaServed' => 'India',
         'offers' => [
             '@type' => 'Offer',
             'name' => 'Business Consulting Services',
@@ -85,7 +85,7 @@
         '@type' => 'WebSite',
         'name' => 'Asktrix',
         'url' => url('/'),
-        'description' => 'Asktrix - Leading business consulting services in India',
+        'description' => 'Asktrix - Leading business consulting services in India. Asktrix is a leading business consulting services provider in India. We provide expert services for GST registration, company incorporation, trademark registration, accounting, and compliance services across India.',
         'potentialAction' => [
             '@type' => 'SearchAction',
             'target' => url('/search?q={search_term_string}'),
@@ -94,9 +94,10 @@
     ], JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES) !!}
     </script>
     
-    <!-- Google Search Console / Verification Meta Tag -->
-    {{-- <meta name="google-site-verification" content="google-site-verification=Lj8W6Nlb77qiCTHSXlTgzxUUkanWZF53eKRu1F_L52g"> --}}
+    
+    <!-- Google Search Console / Verification Meta Tag -->    
     <meta name="google-site-verification" content="Lj8W6Nlb77qiCTHSXlTgzxUUkanWZF53eKRu1F_L52g" />
+    
     
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="{{ asset('media/ask_icon.ico') }}">
