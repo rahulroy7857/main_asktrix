@@ -701,7 +701,7 @@
                     <h3 class="text-xl font-bold Asktrix-blue mb-3 md:mb-4">Clear your doubts</h3>
                     <div class="mb-3 md:mb-4">
                         <span class="text-sm text-gray-600">Price Starts Onwards</span>
-                        <div class="price-highlight">₹1,988 INR</div>
+                        <div class="price-highlight">₹1,899 INR</div>
                     </div>
                     
                     <!-- AJAX Message Container -->

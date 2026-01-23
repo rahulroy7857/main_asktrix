@@ -272,9 +272,7 @@
                     <h1 class="text-2xl sm:text-3xl md:text-4xl font-bold Asktrix-blue mb-6 leading-tight">
                         Guide to Professional Tax Return Filing
                     </h1>
-                    <button class="bg-Asktrix-green hover:bg-green-600 text-white font-semibold py-2 md:py-3 px-4 md:px-6 rounded-lg transition-colors mb-6">
-                        Get Started
-                    </button>
+                    
                     <p class="text-sm sm:text-base md:text-lg text-gray-700 leading-relaxed">
                         Professional tax is a state-level tax levied on professionals and salaried individuals in India. It is governed by respective state governments and varies from state to state. Asktrix provides comprehensive support for professional tax registration, filing, and compliance across all Indian states.
                     </p>
