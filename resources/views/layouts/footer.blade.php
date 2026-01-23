@@ -19,8 +19,13 @@
                     
                     <div class="flex items-center space-x-2">
                         <i class="fas fa-phone text-white"></i>
-                        <span class="text-white">+91 7004670611</span>
+                        <span class="text-white">+91 7823954297, +91 7823954298</span>
                     </div>
+                    <div class="flex items-center space-x-2">
+                        <i class="fas fa-envelope text-white"></i>
+                        <span class="text-white">contact@asktrix.com</span>
+                    </div>
+
                     <div class="flex space-x-4 mt-4">
                         <!-- Social Media Links -->
                         <a href="https://www.facebook.com/share.php?u={{ urlencode(url()->current()) }}" target="_blank" rel="noopener noreferrer" class="text-white hover:text-blue-200 transition-colors" title="Share on Facebook">

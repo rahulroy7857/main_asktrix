@@ -252,7 +252,7 @@
                         <i class="fas fa-phone text-blue-600 text-2xl"></i>
                     </div>
                     <h3 class="text-xl font-bold text-gray-800 mb-2">Call Us</h3>
-                    <a href="tel:+917004670611" class="text-blue-600 hover:text-blue-700 font-medium text-lg">+91 7004670611</a>
+                    <a href="tel:+917823954297" class="text-blue-600 hover:text-blue-700 font-medium text-lg">+91 7823954297, +91 7823954298</a>
                 </div>
 
                 <!-- Email Card -->

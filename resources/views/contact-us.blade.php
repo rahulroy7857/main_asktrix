@@ -138,7 +138,7 @@
                     </div>
                     <h3 class="text-xl font-bold text-gray-800 mb-3">Chat with us</h3>
                     <p class="text-gray-600 mb-4 leading-relaxed">
-                        We've got live Social Experts waiting to help you <strong>monday to saturday</strong> from <strong>10am to 6pm</strong>
+                        We've got live Social Experts waiting to help you <strong>Monday to Saturday</strong> from <strong>10am to 6pm</strong>
                     </p>
                     <a href="https://wa.me/917004670611" target="_blank" class="block w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-md transition-colors duration-300 text-center">
                         Chat with us
@@ -152,7 +152,7 @@
                     </div>
                     <h3 class="text-xl font-bold text-gray-800 mb-3">Email Us</h3>
                     <p class="text-gray-600 mb-4 leading-relaxed">
-                        Simple drop us an email at <strong>info@asktrix.com</strong> and you'll receive a reply within 24 hours
+                        Simple drop us an email at <strong>contact@asktrix.com</strong> and you'll receive a reply within 24 hours
                     </p>
                     <a href="mailto:info@asktrix.com?subject=Contact%20Inquiry" class="block w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-md transition-colors duration-300 text-center">
                         Email Us
@@ -166,10 +166,10 @@
                     </div>
                     <h3 class="text-xl font-bold text-gray-800 mb-3">Give us a call</h3>
                     <p class="text-gray-600 mb-4 leading-relaxed">
-                        Give us a ring. Our Experts are standing by <strong>monday to saturday</strong> from <strong>10am to 6pm</strong>
+                        Give us a ring. Our Experts are standing by <strong>Monday to Saturday</strong> from <strong>10am to 6pm</strong>
                     </p>
                     <a href="tel:+917004670611" class="block w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-md transition-colors duration-300 text-center">
-                        +91 7004670611
+                        +91 7823954297
                     </a>
                 </div>
             </div>
