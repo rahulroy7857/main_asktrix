@@ -17,7 +17,7 @@
                 </p>
                 <button class="bg-blue-600 hover:bg-blue-700 text-white px-6 md:px-8 py-3 rounded-md font-medium transition-colors w-full sm:w-auto">
                    
-                    <a href="https://www.leads.asktrix.com" target="_blank" class="text-white px-6 py-2 rounded-md font-medium transition-colors flex items-center text-sm">
+                    <a href="https://www.leads.asktrix.com"  class="text-white px-6 py-2 rounded-md font-medium transition-colors flex items-center text-sm">
                         Get Started
                     </a>
                 </button>
