@@ -128,9 +128,70 @@
         }
         .scroll-to-top {
             position: fixed;
+            bottom: 90px;
+            right: 20px;
+            z-index: 1000;
+        }
+        
+        /* WhatsApp Chat Widget */
+        .whatsapp-widget {
+            position: fixed;
             bottom: 20px;
             right: 20px;
             z-index: 1000;
+            width: 60px;
+            height: 60px;
+            background-color: #25D366;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 12px rgba(37, 211, 102, 0.4);
+            transition: all 0.3s ease;
+            cursor: pointer;
+            animation: pulse 2s infinite;
+        }
+        
+        .whatsapp-widget:hover {
+            background-color: #20BA5A;
+            transform: scale(1.1);
+            box-shadow: 0 6px 20px rgba(37, 211, 102, 0.6);
+        }
+        
+        .whatsapp-widget i {
+            color: white;
+            font-size: 32px;
+        }
+        
+        @keyframes pulse {
+            0% {
+                box-shadow: 0 4px 12px rgba(37, 211, 102, 0.4);
+            }
+            50% {
+                box-shadow: 0 4px 20px rgba(37, 211, 102, 0.6);
+            }
+            100% {
+                box-shadow: 0 4px 12px rgba(37, 211, 102, 0.4);
+            }
+        }
+        
+        /* Mobile responsive adjustments for WhatsApp widget */
+        @media (max-width: 768px) {
+            .whatsapp-widget {
+                width: 56px;
+                height: 56px;
+                bottom: 20px;
+                right: 20px;
+            }
+            
+            .whatsapp-widget i {
+                font-size: 28px;
+            }
+            
+            .scroll-to-top {
+                bottom: 90px;
+                right: 20px;
+            }
         }
         .carousel-slide {
             display: none;
@@ -407,6 +468,11 @@
     @yield('content')
     
     @include('layouts.footer')
+
+    <!-- WhatsApp Chat Widget -->
+    <a href="https://wa.me/917823954297" target="_blank" rel="noopener noreferrer" class="whatsapp-widget" aria-label="Chat with us on WhatsApp" title="Chat with us on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
 
     <!-- Scroll to Top Button -->
     <button class="scroll-to-top bg-blue-500 hover:bg-blue-600 text-white w-12 h-12 rounded-full shadow-lg transition-colors" onclick="scrollToTop()">
