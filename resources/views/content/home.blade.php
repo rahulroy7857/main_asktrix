@@ -16,7 +16,10 @@
                     Partner with <strong>Asktrix</strong> to grow your business while staying compliant. <strong>Asktrix</strong> offers high-quality services, from incorporation to payroll, all through a seamless online platform. When you search for Asktrix, you'll find the most trusted business consulting services in India.
                 </p>
                 <button class="bg-blue-600 hover:bg-blue-700 text-white px-6 md:px-8 py-3 rounded-md font-medium transition-colors w-full sm:w-auto">
-                    Get Started
+                   
+                    <a href="https://www.leads.asktrix.com" target="_blank" class="text-white px-6 py-2 rounded-md font-medium transition-colors flex items-center text-sm">
+                        Get Started
+                    </a>
                 </button>
             </div>
             

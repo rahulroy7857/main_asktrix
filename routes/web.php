@@ -9,7 +9,13 @@ use App\Http\Controllers\LicenseRegistrationController;
 use App\Http\Controllers\RocController;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\SitemapController;
+use App\Http\Controllers\PaymentController;
 
+
+// Fallback route for invalid URLs - redirect to home page
+Route::fallback(function () {return redirect('/');});
+
+// Home Route
 Route::get('/', function () {return view('home');})->name('home');
 
 // About Us Route
@@ -19,24 +25,16 @@ Route::get('about-us/', function () {return view('about-us');})->name('about-us'
 Route::get('contact-us/', function () {return view('contact-us');})->name('contact-us');
 
 // Terms and Conditions Route
-Route::get('terms-conditions/', function () {
-    return view('terms-conditions');
-})->name('terms-conditions');
+Route::get('terms-conditions/', function () {return view('terms-conditions');})->name('terms-conditions');
 
 // Cancellation & Refund Policy Route
-Route::get('cancellation-refund/', function () {
-    return view('cancellation-refund');
-})->name('cancellation-refund');
+Route::get('cancellation-refund/', function () {return view('cancellation-refund');})->name('cancellation-refund');
 
 // Privacy Policy Route
-Route::get('privacy-policy/', function () {
-    return view('privacy-policy');
-})->name('privacy-policy');
+Route::get('privacy-policy/', function () {return view('privacy-policy');})->name('privacy-policy');
 
 // Disclaimer Route
-Route::get('disclaimer/', function () {
-    return view('disclaimer');
-})->name('disclaimer');
+Route::get('disclaimer/', function () {return view('disclaimer');})->name('disclaimer');
 
 // Sitemap Route
 Route::get('/sitemap.xml', [SitemapController::class, 'index'])->name('sitemap');
@@ -114,15 +112,17 @@ Route::get('section-8-company', [RegistrationController::class, 'section8Company
 
 // ROC Routes
 
-Route::get('roc-registrar-of-companies/', [RocController::class, 'index'])->name('roc-registrar-of-companies');
-Route::get('appointment-of-director/', [RocController::class, 'appointmentOfDirector'])->name('appointment-of-director');
-Route::get('removal-of-director/', [RocController::class, 'removalOfDirector'])->name('removal-of-director');
-Route::get('company-share-transfer/', [RocController::class, 'companyShareTransfer'])->name('company-share-transfer'); 
-Route::get('strike-off-company/', [RocController::class, 'strikeOffCompany'])->name('strike-off-company');
-Route::get('director-disqualification/', [RocController::class, 'directorDisqualification'])->name('director-disqualification');
-Route::get('company-name-change/', [RocController::class, 'companyNameChange'])->name('company-name-change');
-Route::get('authorized-capital/', [RocController::class, 'authorizedCapital'])->name('authorized-capital');
-Route::get('change-of-registered-office/', [RocController::class, 'changeOfRegisteredOffice'])->name('change-of-registered-office');
+Route::get('roc-registrar-of-companies', [RocController::class, 'index'])->name('roc-registrar-of-companies');
+Route::get('appointment-of-director', [RocController::class, 'appointmentOfDirector'])->name('appointment-of-director');
+Route::get('removal-of-director', [RocController::class, 'removalOfDirector'])->name('removal-of-director');
+Route::get('company-share-transfer', [RocController::class, 'companyShareTransfer'])->name('company-share-transfer'); 
+Route::get('strike-off-company', [RocController::class, 'strikeOffCompany'])->name('strike-off-company');
+Route::get('director-disqualification', [RocController::class, 'directorDisqualification'])->name('director-disqualification');
+Route::get('company-name-change', [RocController::class, 'companyNameChange'])->name('company-name-change');
+Route::get('authorized-capital', [RocController::class, 'authorizedCapital'])->name('authorized-capital');
+Route::get('change-of-registered-office', [RocController::class, 'changeOfRegisteredOffice'])->name('change-of-registered-office');
 
-// Fallback route for invalid URLs - redirect to home page
-Route::fallback(function () {return redirect('/');});
+
+
+
+

@@ -139,17 +139,11 @@
             </div>
         </nav>
         
-        <!-- Payments Button - Hidden on Mobile -->
-        <div class="relative group hidden md:block">
-            <button class="bg-green-500 hover:bg-green-600 text-white px-6 py-2 rounded-md font-medium transition-colors flex items-center text-sm">
-                Payments <i class="fas fa-chevron-down ml-1 text-xs"></i>
-            </button>
-            <div class="absolute top-full right-0 mt-4 w-64 bg-white rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform translate-y-2 group-hover:translate-y-0">
-                <div class="p-6">
-                    <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-green-600 transition-colors text-sm">Pay with Razorpay</a>
-                    <!-- <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-green-600 transition-colors text-sm">Pay with PhonePe</a> -->
-                </div>
-            </div>
+        <!-- CRM Button - Hidden on Mobile -->
+        <div class="hidden md:block">
+            <a href="https://crm.asktrix.com" target="_blank" class="bg-green-500 hover:bg-green-600 text-white px-6 py-2 rounded-md font-medium transition-colors flex items-center text-sm">
+                CRM
+            </a>
         </div>
         
         <!-- Mobile Menu Button -->
@@ -289,21 +283,14 @@
                 </div>
             </div>
             
-            <!-- Payments Dropdown -->
+            <!-- CRM login -->
             <div class="mobile-nav-item">
-                <button class="mobile-nav-header w-full text-left flex items-center justify-between p-3 bg-green-50 border border-green-200 rounded-lg hover:bg-green-100 transition-colors" onclick="toggleMobileNav('payments')">
+                <a href="https://crm.asktrix.com" target="_blank" class="mobile-nav-header w-full text-left flex items-center justify-between p-3 bg-green-50 border border-green-200 rounded-lg hover:bg-green-100 transition-colors">
                     <span class="font-medium text-green-800 flex items-center">
                         <i class="fas fa-credit-card mr-2"></i>
-                        Payments
+                        CRM
                     </span>
-                    <i class="fas fa-chevron-down mobile-nav-icon transition-transform duration-200 text-green-600" id="payments-icon"></i>
-                </button>
-                <div class="mobile-nav-content hidden" id="payments-content">
-                    <div class="ml-4 mt-2 space-y-1 pb-2">
-                        <a href="#" class="block text-sm text-gray-600 hover:text-green-600 transition-colors py-2 px-3 rounded-lg hover:bg-green-50">Pay with Razorpay</a>
-                        <!-- <a href="#" class="block text-sm text-gray-600 hover:text-green-600 transition-colors py-2 px-3 rounded-lg hover:bg-green-50">Pay with PhonePe</a> -->
-                    </div>
-                </div>
+                </a>
             </div>
         </nav>
     </div>
