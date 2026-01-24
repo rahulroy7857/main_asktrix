@@ -261,7 +261,7 @@
                         <i class="fas fa-envelope text-green-600 text-2xl"></i>
                     </div>
                     <h3 class="text-xl font-bold text-gray-800 mb-2">Email Us</h3>
-                    <a href="mailto:info@asktrix.com" class="text-green-600 hover:text-green-700 font-medium">info@asktrix.com</a>
+                    <a href="mailto:contact@asktrix.com" class="text-green-600 hover:text-green-700 font-medium">contact@asktrix.com</a>
                 </div>
             </div>
         </div>

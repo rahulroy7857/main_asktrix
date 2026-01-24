@@ -140,13 +140,13 @@
                     <p class="text-gray-600 mb-4 leading-relaxed">
                         We've got live Social Experts waiting to help you <strong>Monday to Saturday</strong> from <strong>10am to 6pm</strong>
                     </p>
-                    <a href="https://wa.me/917004670611" target="_blank" class="block w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-md transition-colors duration-300 text-center">
+                    <a href="https://wa.me/917823954297" target="_blank" class="block w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-md transition-colors duration-300 text-center">
                         Chat with us
                     </a>
                 </div>
 
                 <!-- Card 2: Email Us -->
-                <div class="bg-white border border-gray-200 rounded-xl p-6 hover:shadow-lg transition-shadow duration-300">
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=contact@asktrix.com&su=Contact%20Inquiry&body=Hello%20Asktrix%20Team%2C%0A%0A" target="_blank" rel="noopener noreferrer" class="block bg-white border border-gray-200 rounded-xl p-6 hover:shadow-lg transition-shadow duration-300 cursor-pointer">
                     <div class="w-14 h-14 bg-blue-100 rounded-full flex items-center justify-center mb-4">
                         <i class="fas fa-envelope text-blue-600 text-2xl"></i>
                     </div>
@@ -154,10 +154,10 @@
                     <p class="text-gray-600 mb-4 leading-relaxed">
                         Simple drop us an email at <strong>contact@asktrix.com</strong> and you'll receive a reply within 24 hours
                     </p>
-                    <a href="mailto:info@asktrix.com?subject=Contact%20Inquiry" class="block w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-md transition-colors duration-300 text-center">
+                    <div class="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-md transition-colors duration-300 text-center">
                         Email Us
-                    </a>
-                </div>
+                    </div>
+                </a>
 
                 <!-- Card 3: Give us a call -->
                 <div class="bg-white border border-gray-200 rounded-xl p-6 hover:shadow-lg transition-shadow duration-300">
@@ -168,7 +168,7 @@
                     <p class="text-gray-600 mb-4 leading-relaxed">
                         Give us a ring. Our Experts are standing by <strong>Monday to Saturday</strong> from <strong>10am to 6pm</strong>
                     </p>
-                    <a href="tel:+917004670611" class="block w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-md transition-colors duration-300 text-center">
+                    <a href="#" class="block w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-md transition-colors duration-300 text-center">
                         +91 7823954297
                     </a>
                 </div>
