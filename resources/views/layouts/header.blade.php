@@ -141,7 +141,7 @@
         
         <!-- CRM Button - Hidden on Mobile -->
         <div class="hidden md:block">
-            <a href="https://crm.asktrix.com" target="_blank" class="bg-green-500 hover:bg-green-600 text-white px-6 py-2 rounded-md font-medium transition-colors flex items-center text-sm">
+            <a href="https://crm.asktrix.com"  class="bg-green-500 hover:bg-green-600 text-white px-6 py-2 rounded-md font-medium transition-colors flex items-center text-sm">
                 CRM
             </a>
         </div>
