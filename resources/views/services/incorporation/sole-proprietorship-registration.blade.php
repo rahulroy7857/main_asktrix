@@ -741,7 +741,7 @@
                         <button type="submit" 
                                 id="submitBtn"
                                 class="w-full bg-yathrafin-green hover:bg-green-600 text-white font-semibold py-2 md:py-3 px-4 md:px-6 rounded-lg transition-colors">
-                            <span id="submitText">Get Started Now</span>
+                            <span id="submitText">Pay Now</span>
                             <span id="loadingText" class="hidden">
                                 <i class="fas fa-spinner fa-spin mr-2"></i>Submitting...
                             </span>

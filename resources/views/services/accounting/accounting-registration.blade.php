@@ -33,7 +33,7 @@
                                 <p class="text-gray-600 text-sm mb-3 md:mb-4 leading-relaxed">
                                     For a private limited company in India, adhering to compliance standards is essential to maintain credibility, avoid legal penalties, and foster business growth.
                                 </p>
-                                <a href="#" class="text-blue-600 font-medium text-sm hover:text-blue-800">View More...</a>
+                                <a href="{{ route('company-annual-filing-roc') }}" class="text-blue-600 font-medium text-sm hover:text-blue-800">View More...</a>
                             </div>
                         </div>
                     </div>
@@ -49,7 +49,7 @@
                                 <p class="text-gray-600 text-sm mb-3 md:mb-4 leading-relaxed">
                                     Limited Liability Partnerships (LLPs) offer a blend of company and partnership benefits, and like any registered business, LLPs must comply with various statutory requirements.
                                 </p>
-                                <a href="#" class="text-blue-600 font-medium text-sm hover:text-blue-800">View More...</a>
+                                <a href="{{ route('llp-annual-filing') }}" class="text-blue-600 font-medium text-sm hover:text-blue-800">View More...</a>
                             </div>
                         </div>
                     </div>
@@ -65,7 +65,7 @@
                                 <p class="text-gray-600 text-sm mb-3 md:mb-4 leading-relaxed">
                                     Proprietorship is one of the simplest forms of business, making it popular among small businesses and freelancers. However, proprietorships must still comply with various tax and regulatory requirements.
                                 </p>
-                                <a href="#" class="text-blue-600 font-medium text-sm hover:text-blue-800">View More...</a>
+                                <a href="{{ route('proprietorship-compliance') }}" class="text-blue-600 font-medium text-sm hover:text-blue-800">View More...</a>
                             </div>
                         </div>
                     </div>
@@ -81,7 +81,7 @@
                                 <p class="text-gray-600 text-sm mb-3 md:mb-4 leading-relaxed">
                                     GST return filing is a mandatory requirement for businesses registered under the Goods and Services Tax (GST) regime in India.
                                 </p>
-                                <a href="#" class="text-blue-600 font-medium text-sm hover:text-blue-800">View More...</a>
+                                <a href="{{ route('gst-return-filing') }}" class="text-blue-600 font-medium text-sm hover:text-blue-800">View More...</a>
                             </div>
                         </div>
                     </div>
@@ -97,7 +97,7 @@
                                 <p class="text-gray-600 text-sm mb-3 md:mb-4 leading-relaxed">
                                     Income Tax Return (ITR) filing is an essential compliance requirement for individuals, businesses, and other entities with income sources.
                                 </p>
-                                <a href="#" class="text-blue-600 font-medium text-sm hover:text-blue-800">View More...</a>
+                                <a href="{{ route('income-tax-return-filing') }}" class="text-blue-600 font-medium text-sm hover:text-blue-800">View More...</a>
                             </div>
                         </div>
                     </div>
@@ -129,7 +129,7 @@
                                 <p class="text-gray-600 text-sm mb-3 md:mb-4 leading-relaxed">
                                     Employee State Insurance (ESI) is a social security scheme provided by the Government of India under the Employee State Insurance Act, 1948.
                                 </p>
-                                <a href="#" class="text-blue-600 font-medium text-sm hover:text-blue-800">View More...</a>
+                                <a href="{{ route('esi-return-filing') }}" class="text-blue-600 font-medium text-sm hover:text-blue-800">View More...</a>
                             </div>
                         </div>
                     </div>
@@ -145,7 +145,7 @@
                                 <p class="text-gray-600 text-sm mb-3 md:mb-4 leading-relaxed">
                                     Provident Fund (PF) is a government-mandated retirement savings scheme for employees in India, governed by the Employees' Provident Fund.
                                 </p>
-                                <a href="#" class="text-blue-600 font-medium text-sm hover:text-blue-800">View More...</a>
+                                <a href="{{ route('pf-return-filing') }}" class="text-blue-600 font-medium text-sm hover:text-blue-800">View More...</a>
                             </div>
                         </div>
                     </div>
@@ -161,7 +161,7 @@
                                 <p class="text-gray-600 text-sm mb-3 md:mb-4 leading-relaxed">
                                     Professional Tax (PT) is a state-imposed tax on employees, professionals, and trades in India. This tax varies by state and is governed by state-specific laws and regulations.
                                 </p>
-                                <a href="#" class="text-blue-600 font-medium text-sm hover:text-blue-800">View More...</a>
+                                <a href="{{ route('professional-tax-return-filing') }}" class="text-blue-600 font-medium text-sm hover:text-blue-800">View More...</a>
                             </div>
                         </div>
                     </div>
@@ -231,7 +231,7 @@
                             <button type="submit" 
                                     id="submitBtn"
                                     class="w-full bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 md:py-3 px-4 md:px-6 rounded-lg transition-colors">
-                                <span id="submitText">Get Started</span>
+                                <span id="submitText">contact us</span>
                                 <span id="loadingText" class="hidden">
                                     <i class="fas fa-spinner fa-spin mr-2"></i>Submitting...
                                 </span>

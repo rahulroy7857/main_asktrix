@@ -172,7 +172,7 @@
                                 <p class="text-gray-600 text-sm mb-3 md:mb-4 leading-relaxed">
                                     ISO (International Organization for Standardization) certification is essential for businesses aiming to enhance their credibility, improve quality management, and meet international standards.
                                 </p>
-                                <a href="#" class="text-blue-600 font-medium text-sm hover:text-blue-800">View More...</a>
+                                <a href="{{ route('iso-certification') }}" class="text-blue-600 font-medium text-sm hover:text-blue-800">View More...</a>
                             </div>
                         </div>
                     </div>
@@ -188,7 +188,7 @@
                                 <p class="text-gray-600 text-sm mb-3 md:mb-4 leading-relaxed">
                                     LUT (Letter of Undertaking) registration is an important process for exporters in India who wish to export goods or services without the burden of paying GST upfront.
                                 </p>
-                                <a href="#" class="text-blue-600 font-medium text-sm hover:text-blue-800">View More...</a>
+                                <a href="{{ route('lut-registration') }}" class="text-blue-600 font-medium text-sm hover:text-blue-800">View More...</a>
                             </div>
                         </div>
                     </div>
@@ -236,7 +236,7 @@
                                 <p class="text-gray-600 text-sm mb-3 md:mb-4 leading-relaxed">
                                     12A Registration is a process under the Income Tax Act, 1961, that allows non-profit organizations (like NGOs, charitable trusts, and societies) to claim tax exemptions.
                                 </p>
-                                <a href="#" class="text-blue-600 font-medium text-sm hover:text-blue-800">View More...</a>
+                                <a href="{{ route('12a-registration') }}" class="text-blue-600 font-medium text-sm hover:text-blue-800">View More...</a>
                             </div>
                         </div>
                     </div>
@@ -252,7 +252,7 @@
                                 <p class="text-gray-600 text-sm mb-3 md:mb-4 leading-relaxed">
                                     80G Registration is a provision under the Income Tax Act, 1961, allowing donors to claim tax deductions on donations made to eligible charitable organizations.
                                 </p>
-                                <a href="#" class="text-blue-600 font-medium text-sm hover:text-blue-800">View More...</a>
+                                <a href="{{ route('80g-registration') }}" class="text-blue-600 font-medium text-sm hover:text-blue-800">View More...</a>
                             </div>
                         </div>
                     </div>
@@ -338,7 +338,7 @@
                             <button type="submit" 
                                     id="submitBtn"
                                     class="w-full bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 md:py-3 px-4 md:px-6 rounded-lg transition-colors">
-                                <span id="submitText">Get Started</span>
+                                <span id="submitText">contact us</span>
                                 <span id="loadingText" class="hidden">
                                     <i class="fas fa-spinner fa-spin mr-2"></i>Submitting...
                                 </span>

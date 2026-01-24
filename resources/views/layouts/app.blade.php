@@ -475,9 +475,9 @@
     </a>
 
     <!-- Scroll to Top Button -->
-    <button class="scroll-to-top bg-blue-500 hover:bg-blue-600 text-white w-12 h-12 rounded-full shadow-lg transition-colors" onclick="scrollToTop()">
+    <!-- <button class="scroll-to-top bg-blue-500 hover:bg-blue-600 text-white w-12 h-12 rounded-full shadow-lg transition-colors" onclick="scrollToTop()">
         <i class="fas fa-chevron-up"></i>
-    </button>
+    </button> -->
 
     <script>
         // Mobile menu toggle

@@ -178,7 +178,7 @@
                             <button type="submit" 
                                     id="submitBtn"
                                     class="w-full bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 md:py-3 px-4 md:px-6 rounded-lg transition-colors">
-                                <span id="submitText">Get Started</span>
+                                <span id="submitText">contact us</span>
                                 <span id="loadingText" class="hidden">
                                     <i class="fas fa-spinner fa-spin mr-2"></i>Submitting...
                                 </span>

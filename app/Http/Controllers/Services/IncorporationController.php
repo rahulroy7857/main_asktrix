@@ -41,49 +41,49 @@ class IncorporationController extends ServiceController
                     'title' => 'Sole Proprietorship Registration',
                     'description' => 'A Sole Proprietorship is a simple business structure ideal for individuals looking to start a small business. It\'s owned, managed',
                     'icon' => 'fas fa-user',
-                    'link' => '#'
+                    'link' => route('sole-proprietorship-registration')
                 ],
                 [
                     'title' => 'One Person Company (OPC)',
                     'description' => 'Starting a One Person Company (OPC) in India is ideal for solo entrepreneurs who want the benefits of a private limited company with simplified',
                     'icon' => 'fas fa-building',
-                    'link' => '#'
+                    'link' => route('one-person-company-registration')
                 ],
                 [
                     'title' => 'Partnership Firm',
                     'description' => 'A Partnership Firm is a popular business structure in India, offering simplicity in terms of formation, management',
                     'icon' => 'fas fa-users',
-                    'link' => '#'
+                    'link' => route('partnership-firm-registration')
                 ],
                 [
                     'title' => 'LLP Registration',
                     'description' => 'A Limited Liability Partnership (LLP) combines the benefits of both registered company and partnership firm. It offers partners the flexibility',
                     'icon' => 'fas fa-file-contract',
-                    'link' => '#'
+                    'link' => route('llp-registration')
                 ],
                 [
                     'title' => 'Private Limited Company',
                     'description' => 'Starting a private limited company in India offers multiple benefits for business owners, including separate legal identity,',
                     'icon' => 'fas fa-building',
-                    'link' => '#'
+                    'link' => route('private-limited-company-registration')
                 ],
                 [
                     'title' => 'Public Limited Company',
                     'description' => 'Launching a Public Limited Company (PLC) in India is a strategic move for businesses looking to raise capital from the general public and operate',
                     'icon' => 'fas fa-building',
-                    'link' => '#'
+                    'link' => route('public-limited-company-registration')
                 ],
                 [
                     'title' => 'Trust Registration',
                     'description' => 'Establishing a trust in India is a meaningful way to contribute to social welfare, manage estates, or achieve charitable, educational, or religious',
                     'icon' => 'fas fa-hand-holding-heart',
-                    'link' => '#'
+                    'link' => route('trust-registration')
                 ],
                 [
                     'title' => 'Section 8 Company',
                     'description' => 'A Section 8 Company is a special type of non-profit organization in India with the aim of promoting charity and getting funds from',
                     'icon' => 'fas fa-university',
-                    'link' => '#'
+                    'link' => route('section-8-company')
                 ]
             ]
         ];

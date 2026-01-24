@@ -33,7 +33,7 @@
                                 <p class="text-gray-600 text-sm mb-3 md:mb-4 leading-relaxed">
                                     Here's a comprehensive guide to Trademark Registration for businesses, with a focus on eligibility, steps, types, and a detailed table of trademark classes.
                                 </p>
-                                <a href="#" class="text-blue-600 font-medium text-sm hover:text-blue-800">View More...</a>
+                                <a href="{{ route('trademark-registration') }}" class="text-blue-600 font-medium text-sm hover:text-blue-800">View More...</a>
                             </div>
                         </div>
                     </div>
@@ -49,7 +49,7 @@
                                 <p class="text-gray-600 text-sm mb-3 md:mb-4 leading-relaxed">
                                     Copyright Registration is the legal process of officially recording the ownership of a creative work, which grants the creator exclusive rights to use, distribute.
                                 </p>
-                                <a href="#" class="text-blue-600 font-medium text-sm hover:text-blue-800">View More...</a>
+                                <a href="{{ route('copyright-registration') }}" class="text-blue-600 font-medium text-sm hover:text-blue-800">View More...</a>
                             </div>
                         </div>
                     </div>
@@ -65,7 +65,7 @@
                                 <p class="text-gray-600 text-sm mb-3 md:mb-4 leading-relaxed">
                                     A Copyright Objection arises when an individual or entity challenges the validity of a copyright registration application.
                                 </p>
-                                <a href="#" class="text-blue-600 font-medium text-sm hover:text-blue-800">View More...</a>
+                                <a href="{{ route('copyright-objection') }}" class="text-blue-600 font-medium text-sm hover:text-blue-800">View More...</a>
                             </div>
                         </div>
                     </div>
@@ -97,7 +97,7 @@
                                 <p class="text-gray-600 text-sm mb-3 md:mb-4 leading-relaxed">
                                     Patent Registration is a legal process under the Patents Act, 1970, which grants inventors exclusive rights to their inventions for a specified period.
                                 </p>
-                                <a href="#" class="text-blue-600 font-medium text-sm hover:text-blue-800">View More...</a>
+                                <a href="{{ route('patent-registration') }}" class="text-blue-600 font-medium text-sm hover:text-blue-800">View More...</a>
                             </div>
                         </div>
                     </div>
@@ -113,7 +113,7 @@
                                 <p class="text-gray-600 text-sm mb-3 md:mb-4 leading-relaxed">
                                     Trademark objection is a procedural step in the trademark registration process. When a trademark application is filed.
                                 </p>
-                                <a href="#" class="text-blue-600 font-medium text-sm hover:text-blue-800">View More...</a>
+                                <a href="{{ route('trademark-objection') }}" class="text-blue-600 font-medium text-sm hover:text-blue-800">View More...</a>
                             </div>
                         </div>
                     </div>
@@ -129,7 +129,7 @@
                                 <p class="text-gray-600 text-sm mb-3 md:mb-4 leading-relaxed">
                                     A trademark hearing is a formal proceeding where the applicant has an opportunity to address objections raised by the trademark examiner.
                                 </p>
-                                <a href="#" class="text-blue-600 font-medium text-sm hover:text-blue-800">View More...</a>
+                                <a href="{{ route('trademark-hearing') }}" class="text-blue-600 font-medium text-sm hover:text-blue-800">View More...</a>
                             </div>
                         </div>
                     </div>
@@ -177,7 +177,7 @@
                                 <p class="text-gray-600 text-sm mb-3 md:mb-4 leading-relaxed">
                                     A Trademark Registration Certificate is an official document issued by the Trademark Registry that signifies the successful registration of a trademark.
                                 </p>
-                                <a href="#" class="text-blue-600 font-medium text-sm hover:text-blue-800">View More...</a>
+                                <a href="{{ route('trademark-registration-certificate') }}" class="text-blue-600 font-medium text-sm hover:text-blue-800">View More...</a>
                             </div>
                         </div>
                     </div>
@@ -193,7 +193,7 @@
                                 <p class="text-gray-600 text-sm mb-3 md:mb-4 leading-relaxed">
                                     Trademark Renewal is the process of maintaining the legal protection of a registered trademark by extending its validity.
                                 </p>
-                                <a href="#" class="text-blue-600 font-medium text-sm hover:text-blue-800">View More...</a>
+                                <a href="{{ route('trademark-renewal') }}" class="text-blue-600 font-medium text-sm hover:text-blue-800">View More...</a>
                             </div>
                         </div>
                     </div>
@@ -209,7 +209,7 @@
                                 <p class="text-gray-600 text-sm mb-3 md:mb-4 leading-relaxed">
                                     A Copyright Registration Certificate is a legal document issued by the Copyright Office that serves as proof of the ownership of a creative work.
                                 </p>
-                                <a href="#" class="text-blue-600 font-medium text-sm hover:text-blue-800">View More...</a>
+                                <a href="{{ route('copyright-registration-certificate') }}" class="text-blue-600 font-medium text-sm hover:text-blue-800">View More...</a>
                             </div>
                         </div>
                     </div>
@@ -279,7 +279,7 @@
                             <button type="submit" 
                                     id="submitBtn"
                                     class="w-full bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 md:py-3 px-4 md:px-6 rounded-lg transition-colors">
-                                <span id="submitText">Get Started</span>
+                                <span id="submitText">contact us</span>
                                 <span id="loadingText" class="hidden">
                                     <i class="fas fa-spinner fa-spin mr-2"></i>Submitting...
                                 </span>

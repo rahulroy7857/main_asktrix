@@ -82,7 +82,7 @@
                                 <p class="text-gray-600 text-sm mb-3 md:mb-4 leading-relaxed">
                                     The Employee State Insurance (ESI) scheme is a significant social security program in India aimed at providing financial protection to employees
                                 </p>
-                                <a href="#" class="text-blue-600 font-medium text-sm hover:text-blue-800">View More...</a>
+                                <a href="{{ route('esic-registration') }}" class="text-blue-600 font-medium text-sm hover:text-blue-800">View More...</a>
                             </div>
                         </div>
                     </div>
@@ -98,7 +98,7 @@
                                 <p class="text-gray-600 text-sm mb-3 md:mb-4 leading-relaxed">
                                     Provident Fund (PF) Registration is a crucial process for employers in India, aimed at providing financial security and retirement benefits to employees.
                                 </p>
-                                <a href="#" class="text-blue-600 font-medium text-sm hover:text-blue-800">View More...</a>
+                                <a href="{{ route('epf-registration') }}" class="text-blue-600 font-medium text-sm hover:text-blue-800">View More...</a>
                             </div>
                         </div>
                     </div>
@@ -130,7 +130,7 @@
                                 <p class="text-gray-600 text-sm mb-3 md:mb-4 leading-relaxed">
                                     The Government of India launched the Startup India initiative to promote innovation, create job opportunities, and drive sustainable economic
                                 </p>
-                                <a href="#" class="text-blue-600 font-medium text-sm hover:text-blue-800">View More...</a>
+                                <a href="{{ route('startup-india-registration') }}" class="text-blue-600 font-medium text-sm hover:text-blue-800">View More...</a>
                             </div>
                         </div>
                     </div>
@@ -146,7 +146,7 @@
                                 <p class="text-gray-600 text-sm mb-3 md:mb-4 leading-relaxed">
                                     A Digital Signature Certificate (DSC) serves as an electronic form of signature to validate and verify the identity of individuals and entities conducting business
                                 </p>
-                                <a href="#" class="text-blue-600 font-medium text-sm hover:text-blue-800">View More...</a>
+                                <a href="{{ route('digital-signature-online') }}" class="text-blue-600 font-medium text-sm hover:text-blue-800">View More...</a>
                             </div>
                         </div>
                     </div>
@@ -217,7 +217,7 @@
                             <button type="submit" 
                                     id="submitBtn"
                                     class="w-full bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 md:py-3 px-4 md:px-6 rounded-lg transition-colors">
-                                <span id="submitText">Get Started</span>
+                                <span id="submitText">contact us</span>
                                 <span id="loadingText" class="hidden">
                                     <i class="fas fa-spinner fa-spin mr-2"></i>Submitting...
                                 </span>
