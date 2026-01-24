@@ -146,7 +146,7 @@
                 </div>
 
                 <!-- Card 2: Email Us -->
-                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=contact@asktrix.com&su=Contact%20Inquiry&body=Hello%20Asktrix%20Team%2C%0A%0A" target="_blank" rel="noopener noreferrer" class="block bg-white border border-gray-200 rounded-xl p-6 hover:shadow-lg transition-shadow duration-300 cursor-pointer">
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=contact@asktrix.com&su=Contact%20Inquiry&body=Asktrix%20Contact%20Team%2C%0A%0A" target="_blank" rel="noopener noreferrer" class="block bg-white border border-gray-200 rounded-xl p-6 hover:shadow-lg transition-shadow duration-300 cursor-pointer">
                     <div class="w-14 h-14 bg-blue-100 rounded-full flex items-center justify-center mb-4">
                         <i class="fas fa-envelope text-blue-600 text-2xl"></i>
                     </div>

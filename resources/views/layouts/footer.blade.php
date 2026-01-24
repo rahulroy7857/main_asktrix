@@ -28,20 +28,21 @@
 
                     <div class="flex space-x-4 mt-4">
                         <!-- Social Media Links -->
-                        <a href="https://www.facebook.com/share.php?u={{ urlencode(url()->current()) }}" target="_blank" rel="noopener noreferrer" class="text-white hover:text-blue-200 transition-colors" title="Share on Facebook">
+                        <a href="https://www.facebook.com/asktrix" target="_blank" rel="noopener noreferrer" class="text-white hover:text-blue-200 transition-colors" title="Follow on Facebook">
                             <i class="fab fa-facebook text-xl"></i>
                         </a>
-                        <a href="https://twitter.com/intent/tweet?url={{ urlencode(url()->current()) }}" target="_blank" rel="noopener noreferrer" class="text-white hover:text-blue-200 transition-colors" title="Share on Twitter">
+                        <a href="https://x.com/Asktrixlegal" target="_blank" rel="noopener noreferrer" class="text-white hover:text-blue-200 transition-colors" title="Follow on Twitter">
                             <i class="fab fa-twitter text-xl"></i>
                         </a>
-                        <a href="https://www.linkedin.com/sharing/share-offsite/?url={{ urlencode(url()->current()) }}" target="_blank" rel="noopener noreferrer" class="text-white hover:text-blue-200 transition-colors" title="Share on LinkedIn">
-                            <i class="fab fa-linkedin text-xl"></i>
-                        </a>
-                        <a href="https://wa.me/?text={{ urlencode(url()->current()) }}" target="_blank" rel="noopener noreferrer" class="text-white hover:text-blue-200 transition-colors" title="Share on WhatsApp">
+                       
+                        <a href="https://wa.me/917823954297" target="_blank" rel="noopener noreferrer" class="text-white hover:text-blue-200 transition-colors" title="Chat on WhatsApp">
                             <i class="fab fa-whatsapp text-xl"></i>
                         </a>
                         <a href="https://www.instagram.com/asktrix" target="_blank" rel="noopener noreferrer" class="text-white hover:text-blue-200 transition-colors" title="Follow on Instagram">
                             <i class="fab fa-instagram text-xl"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/sharing/share-offsite/?url={{ urlencode(url()->current()) }}" target="_blank" rel="noopener noreferrer" class="text-white hover:text-blue-200 transition-colors" title="Share on LinkedIn">
+                            <i class="fab fa-linkedin text-xl"></i>
                         </a>
                     </div>
                 </div>

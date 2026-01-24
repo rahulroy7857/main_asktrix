@@ -147,7 +147,7 @@
             <div class="absolute top-full right-0 mt-4 w-64 bg-white rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform translate-y-2 group-hover:translate-y-0">
                 <div class="p-6">
                     <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-green-600 transition-colors text-sm">Pay with Razorpay</a>
-                    <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-green-600 transition-colors text-sm">Pay with PhonePe</a>
+                    <!-- <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-green-600 transition-colors text-sm">Pay with PhonePe</a> -->
                 </div>
             </div>
         </div>
@@ -300,8 +300,8 @@
                 </button>
                 <div class="mobile-nav-content hidden" id="payments-content">
                     <div class="ml-4 mt-2 space-y-1 pb-2">
-                        <a href="#" class="block text-sm text-gray-600 hover:text-green-600 transition-colors py-2 px-3 rounded-lg hover:bg-green-50">Pay with Cashfree</a>
-                        <a href="#" class="block text-sm text-gray-600 hover:text-green-600 transition-colors py-2 px-3 rounded-lg hover:bg-green-50">Pay with PhonePe</a>
+                        <a href="#" class="block text-sm text-gray-600 hover:text-green-600 transition-colors py-2 px-3 rounded-lg hover:bg-green-50">Pay with Razorpay</a>
+                        <!-- <a href="#" class="block text-sm text-gray-600 hover:text-green-600 transition-colors py-2 px-3 rounded-lg hover:bg-green-50">Pay with PhonePe</a> -->
                     </div>
                 </div>
             </div>

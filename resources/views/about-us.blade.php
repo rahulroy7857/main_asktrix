@@ -252,7 +252,7 @@
                         <i class="fas fa-phone text-blue-600 text-2xl"></i>
                     </div>
                     <h3 class="text-xl font-bold text-gray-800 mb-2">Call Us</h3>
-                    <a href="tel:+917823954297" class="text-blue-600 hover:text-blue-700 font-medium text-lg">+91 7823954297, +91 7823954298</a>
+                    <a href="#" class="text-blue-600 hover:text-blue-700 font-medium text-lg">+91 7823954297, +91 7823954298</a>
                 </div>
 
                 <!-- Email Card -->
@@ -261,7 +261,8 @@
                         <i class="fas fa-envelope text-green-600 text-2xl"></i>
                     </div>
                     <h3 class="text-xl font-bold text-gray-800 mb-2">Email Us</h3>
-                    <a href="mailto:contact@asktrix.com" class="text-green-600 hover:text-green-700 font-medium">contact@asktrix.com</a>
+                    
+                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=contact@asktrix.com&su=Contact%20Inquiry&body=Asktrix%20Contact%20Team%2C%0A%0A" target="_blank" class="text-green-600 hover:text-green-700 font-medium">contact@asktrix.com</a>
                 </div>
             </div>
         </div>
