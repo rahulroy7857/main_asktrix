@@ -111,8 +111,16 @@ return [
     */
 
     'from' => [
-        'address' => env('MAIL_FROM_ADDRESS', 'hello@example.com'),
-        'name' => env('MAIL_FROM_NAME', 'Example'),
+        'address' => env('MAIL_FROM_ADDRESS', 'no-reply@asktrix.com'),
+        'name' => env('MAIL_FROM_NAME', 'Asktrix'),
     ],
+
+    /*
+    |--------------------------------------------------------------------------
+    | Contact Form Notification Recipient
+    |--------------------------------------------------------------------------
+    */
+
+    'contact_notification' => env('MAIL_CONTACT_NOTIFICATION', 'contact@asktrix.com'),
 
 ];

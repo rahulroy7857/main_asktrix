@@ -2,8 +2,11 @@
 
 namespace App\Http\Controllers;
 
+use App\Mail\ContactFormAdminNotification;
+use App\Mail\ContactFormUserConfirmation;
 use App\Models\Contact;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Support\Facades\Log;
 
@@ -44,6 +47,8 @@ class ContactController extends Controller
                 'status' => 'active'
             ]);
 
+            $this->sendContactEmails($contact);
+
             // Return success response
             if ($request->ajax()) {
                 return response()->json([
@@ -70,6 +75,26 @@ class ContactController extends Controller
             return redirect()->back()
                 ->withInput()
                 ->with('error', 'Sorry, there was an error submitting your request. Please try again later.');
+        }
+    }
+
+    /**
+     * Send confirmation to user and notification to admin from global no-reply address.
+     */
+    private function sendContactEmails(Contact $contact): void
+    {
+        try {
+            Mail::to($contact->email)->send(new ContactFormUserConfirmation($contact));
+
+            $adminEmail = config('mail.contact_notification');
+            if ($adminEmail) {
+                Mail::to($adminEmail)->send(new ContactFormAdminNotification($contact));
+            }
+        } catch (\Exception $e) {
+            Log::error('Contact form email error: ' . $e->getMessage(), [
+                'contact_id' => $contact->id,
+                'service_type' => $contact->service_type,
+            ]);
         }
     }
 }

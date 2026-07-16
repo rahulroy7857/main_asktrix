@@ -141,9 +141,9 @@
         
         <!-- CRM Button - Hidden on Mobile -->
         <div class="hidden md:block">
-            <a href="https://crm.asktrix.com"  class="bg-green-500 hover:bg-green-600 text-white px-6 py-2 rounded-md font-medium transition-colors flex items-center text-sm">
+            {{-- <a href="https://crm.asktrix.com"  class="bg-green-500 hover:bg-green-600 text-white px-6 py-2 rounded-md font-medium transition-colors flex items-center text-sm">
                 CRM
-            </a>
+            </a> --}}
         </div>
         
         <!-- Mobile Menu Button -->
@@ -285,12 +285,12 @@
             
             <!-- CRM login -->
             <div class="mobile-nav-item">
-                <a href="https://crm.asktrix.com" target="_blank" class="mobile-nav-header w-full text-left flex items-center justify-between p-3 bg-green-50 border border-green-200 rounded-lg hover:bg-green-100 transition-colors">
+                {{-- <a href="https://crm.asktrix.com" target="_blank" class="mobile-nav-header w-full text-left flex items-center justify-between p-3 bg-green-50 border border-green-200 rounded-lg hover:bg-green-100 transition-colors">
                     <span class="font-medium text-green-800 flex items-center">
                         <i class="fas fa-credit-card mr-2"></i>
                         CRM
                     </span>
-                </a>
+                </a> --}}
             </div>
         </nav>
     </div>

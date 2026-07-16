@@ -24,6 +24,8 @@
                     <div class="flex items-center space-x-2">
                         <i class="fas fa-envelope text-white"></i>
                         <span class="text-white">contact@asktrix.com</span>
+                        <i class="fas fa-envelope text-white"></i>
+                        <span class="text-white">support@asktrix.com</span>
                     </div>
 
                     <div class="flex space-x-4 mt-4">
