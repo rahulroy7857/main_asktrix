@@ -15,7 +15,9 @@
         </a>
         
         <!-- Navigation -->
-        <nav class="hidden md:flex items-center space-x-8">
+        <nav class="hidden md:flex items-center space-x-3.5 lg:space-x-5 xl:space-x-6">
+           
+
             <!-- Incorporation Dropdown -->
             <div class="relative group">
                 <a href="{{ route('incorporation') }}" class="hover:text-blue-600 transition-colors flex items-center text-gray-800 text-sm">
@@ -137,6 +139,254 @@
                     </div>
                 </div>
             </div>
+
+             <!-- Services Dropdown (Digital, Web & AI Automation) -->
+            <div class="relative group">
+                <a href="{{ route('digital.services') }}" class="hover:text-blue-600 transition-colors flex items-center text-gray-800 text-sm font-semibold group/services py-1">
+                    <span>Services</span>
+                    <span class="ml-1.5 px-1.5 py-0.5 bg-gradient-to-r from-blue-600 to-indigo-600 text-[9px] font-extrabold text-white rounded-full uppercase tracking-wider leading-none shadow-xs">New</span>
+                    <i class="fas fa-chevron-down ml-1.5 text-[10px] text-gray-400 group-hover:text-blue-600 group-hover/services:rotate-180 transition-all duration-200"></i>
+                </a>
+                <div class="absolute top-full right-0 mt-3 w-[760px] lg:w-[820px] max-w-[calc(100vw-2rem)] bg-white rounded-2xl shadow-2xl border border-gray-100 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 transform translate-y-2 group-hover:translate-y-0 z-50 overflow-hidden before:content-[''] before:absolute before:-top-3 before:left-0 before:right-0 before:h-3">
+                    <div class="p-6 grid grid-cols-3 gap-5 bg-slate-50/60">
+                        <!-- Col 1: Web & App Dev -->
+                        <div>
+                            <div class="flex items-center space-x-2 pb-2 mb-2 border-b border-gray-200/80">
+                                <i class="fas fa-laptop-code text-blue-600 text-xs"></i>
+                                <h4 class="text-[11px] font-bold uppercase tracking-wider text-gray-700">Web & App Dev</h4>
+                            </div>
+                            <div class="space-y-1">
+                                <a href="{{ route('website-development') }}" class="group/item flex flex-col p-2 rounded-lg hover:bg-white hover:shadow-sm border border-transparent hover:border-blue-100 transition-all">
+                                    <div class="flex items-center justify-between">
+                                        <span class="text-xs font-bold text-gray-800 group-hover/item:text-blue-600 transition-colors">Website Development</span>
+                                        <i class="fas fa-arrow-right text-[9px] text-transparent group-hover/item:text-blue-500 transform group-hover/item:translate-x-0.5 transition-all"></i>
+                                    </div>
+                                    <span class="text-[11px] text-gray-500 font-medium">₹15,000 / $499</span>
+                                </a>
+                                <a href="{{ route('crm-development') }}" class="group/item flex flex-col p-2 rounded-lg hover:bg-white hover:shadow-sm border border-transparent hover:border-blue-100 transition-all">
+                                    <div class="flex items-center justify-between">
+                                        <span class="text-xs font-bold text-gray-800 group-hover/item:text-blue-600 transition-colors">CRM Development</span>
+                                        <i class="fas fa-arrow-right text-[9px] text-transparent group-hover/item:text-blue-500 transform group-hover/item:translate-x-0.5 transition-all"></i>
+                                    </div>
+                                    <span class="text-[11px] text-gray-500 font-medium">₹35,000 / $1,499</span>
+                                </a>
+                                <a href="{{ route('saas-development') }}" class="group/item flex flex-col p-2 rounded-lg hover:bg-white hover:shadow-sm border border-transparent hover:border-blue-100 transition-all">
+                                    <div class="flex items-center justify-between">
+                                        <span class="text-xs font-bold text-gray-800 group-hover/item:text-blue-600 transition-colors">SaaS Product Dev</span>
+                                        <i class="fas fa-arrow-right text-[9px] text-transparent group-hover/item:text-blue-500 transform group-hover/item:translate-x-0.5 transition-all"></i>
+                                    </div>
+                                    <span class="text-[11px] text-gray-500 font-medium">₹75,000 / $2,999</span>
+                                </a>
+                                <a href="{{ route('app-development') }}" class="group/item flex flex-col p-2 rounded-lg hover:bg-white hover:shadow-sm border border-transparent hover:border-blue-100 transition-all">
+                                    <div class="flex items-center justify-between">
+                                        <span class="text-xs font-bold text-gray-800 group-hover/item:text-blue-600 transition-colors">Mobile App Dev</span>
+                                        <i class="fas fa-arrow-right text-[9px] text-transparent group-hover/item:text-blue-500 transform group-hover/item:translate-x-0.5 transition-all"></i>
+                                    </div>
+                                    <span class="text-[11px] text-gray-500 font-medium">₹50,000 / $1,999</span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Col 2: AI & Automation -->
+                        <div>
+                            <div class="flex items-center space-x-2 pb-2 mb-2 border-b border-gray-200/80">
+                                <i class="fas fa-brain text-purple-600 text-xs"></i>
+                                <h4 class="text-[11px] font-bold uppercase tracking-wider text-gray-700">AI & Automation</h4>
+                            </div>
+                            <div class="space-y-1">
+                                <a href="{{ route('ai-workflow-automation') }}" class="group/item flex flex-col p-2 rounded-lg bg-purple-50/70 border border-purple-100 hover:bg-white hover:shadow-sm hover:border-purple-200 transition-all">
+                                    <div class="flex items-center justify-between">
+                                        <span class="text-xs font-bold text-purple-900 group-hover/item:text-purple-600 transition-colors">AI Workflow Auto</span>
+                                        <span class="text-[8px] bg-purple-200 text-purple-800 px-1 py-0.5 rounded font-extrabold uppercase leading-none">HOT</span>
+                                    </div>
+                                    <span class="text-[11px] text-gray-500 font-medium">₹4,999/mo / $99/mo</span>
+                                </a>
+                                <a href="{{ route('ai-customer-support-automation') }}" class="group/item flex flex-col p-2 rounded-lg hover:bg-white hover:shadow-sm border border-transparent hover:border-blue-100 transition-all">
+                                    <div class="flex items-center justify-between">
+                                        <span class="text-xs font-bold text-gray-800 group-hover/item:text-blue-600 transition-colors">AI Support Automation</span>
+                                        <i class="fas fa-arrow-right text-[9px] text-transparent group-hover/item:text-blue-500 transform group-hover/item:translate-x-0.5 transition-all"></i>
+                                    </div>
+                                    <span class="text-[11px] text-gray-500 font-medium">₹3,999/mo / $49/mo</span>
+                                </a>
+                                <a href="{{ route('ai-voicebot-development') }}" class="group/item flex flex-col p-2 rounded-lg hover:bg-white hover:shadow-sm border border-transparent hover:border-blue-100 transition-all">
+                                    <div class="flex items-center justify-between">
+                                        <span class="text-xs font-bold text-gray-800 group-hover/item:text-blue-600 transition-colors">AI Voicebot Dev</span>
+                                        <i class="fas fa-arrow-right text-[9px] text-transparent group-hover/item:text-blue-500 transform group-hover/item:translate-x-0.5 transition-all"></i>
+                                    </div>
+                                    <span class="text-[11px] text-gray-500 font-medium">₹25,000 / $799</span>
+                                </a>
+                                <a href="{{ route('ai-chatbot-development') }}" class="group/item flex flex-col p-2 rounded-lg hover:bg-white hover:shadow-sm border border-transparent hover:border-blue-100 transition-all">
+                                    <div class="flex items-center justify-between">
+                                        <span class="text-xs font-bold text-gray-800 group-hover/item:text-blue-600 transition-colors">AI Chatbot Dev</span>
+                                        <i class="fas fa-arrow-right text-[9px] text-transparent group-hover/item:text-blue-500 transform group-hover/item:translate-x-0.5 transition-all"></i>
+                                    </div>
+                                    <span class="text-[11px] text-gray-500 font-medium">₹15,000 / $499</span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Col 3: Cloud & Infra -->
+                        <div>
+                            <div class="flex items-center space-x-2 pb-2 mb-2 border-b border-gray-200/80">
+                                <i class="fas fa-cloud text-teal-600 text-xs"></i>
+                                <h4 class="text-[11px] font-bold uppercase tracking-wider text-gray-700">Cloud & Infrastructure</h4>
+                            </div>
+                            <div class="space-y-1">
+                                <a href="{{ route('business-email') }}" class="group/item flex items-center justify-between p-2 rounded-lg hover:bg-white hover:shadow-sm border border-transparent hover:border-blue-100 transition-all">
+                                    <span class="text-xs font-bold text-gray-800 group-hover/item:text-blue-600 transition-colors">Business Email</span>
+                                    <i class="fas fa-arrow-right text-[9px] text-transparent group-hover/item:text-blue-500 transform group-hover/item:translate-x-0.5 transition-all"></i>
+                                </a>
+                                <a href="{{ route('domain-registration') }}" class="group/item flex items-center justify-between p-2 rounded-lg hover:bg-white hover:shadow-sm border border-transparent hover:border-blue-100 transition-all">
+                                    <span class="text-xs font-bold text-gray-800 group-hover/item:text-blue-600 transition-colors">Domain Registration</span>
+                                    <i class="fas fa-arrow-right text-[9px] text-transparent group-hover/item:text-blue-500 transform group-hover/item:translate-x-0.5 transition-all"></i>
+                                </a>
+                                <a href="{{ route('web-hosting') }}" class="group/item flex items-center justify-between p-2 rounded-lg hover:bg-white hover:shadow-sm border border-transparent hover:border-blue-100 transition-all">
+                                    <span class="text-xs font-bold text-gray-800 group-hover/item:text-blue-600 transition-colors">Web Hosting</span>
+                                    <i class="fas fa-arrow-right text-[9px] text-transparent group-hover/item:text-blue-500 transform group-hover/item:translate-x-0.5 transition-all"></i>
+                                </a>
+                                <div class="p-2 rounded-lg bg-teal-50/60 border border-teal-100/70">
+                                    <div class="flex items-center space-x-1.5 text-teal-800 text-[11px] font-bold">
+                                        <i class="fas fa-shield-alt text-teal-600 text-xs"></i>
+                                        <span>Custom Cloud Stack?</span>
+                                    </div>
+                                    <div class="text-[10px] text-gray-500 mt-0.5 leading-snug">Managed cloud setup, DNS & multi-tenant setups.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Dropdown Footer -->
+                    <div class="bg-gradient-to-r from-blue-900 via-indigo-900 to-blue-950 px-6 py-2.5 flex items-center justify-between text-white text-xs">
+                        <div class="flex items-center space-x-2 text-blue-200">
+                            <span class="inline-block w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                            <span>Custom software, AI agents & cloud setups</span>
+                        </div>
+                        <a href="{{ route('digital.services') }}" class="font-bold text-white hover:text-emerald-300 transition-colors flex items-center space-x-1.5 group/ft">
+                            <span>Explore All 11 Services & Full Price Book</span>
+                            <i class="fas fa-arrow-right text-[10px] transform group-hover/ft:translate-x-1 transition-transform"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Language Switcher Dropdown (Desktop) -->
+            <div class="relative group notranslate" translate="no" id="desktop-lang-switcher">
+                <button type="button" class="hover:text-blue-600 transition-colors flex items-center space-x-1.5 px-2.5 py-1.5 rounded-full bg-slate-50 hover:bg-blue-50 border border-gray-200/80 hover:border-blue-300 text-gray-700 hover:text-blue-700 text-xs font-semibold shadow-xs focus:outline-none cursor-pointer">
+                    <i class="fas fa-globe text-blue-600 text-xs"></i>
+                    <span id="desktop-lang-flag" class="text-sm leading-none">🇺🇸</span>
+                    <span id="desktop-lang-code" class="font-bold tracking-wide">EN</span>
+                    <i class="fas fa-chevron-down text-[9px] text-gray-400 group-hover:text-blue-600 group-hover:rotate-180 transition-transform duration-200"></i>
+                </button>
+                <div class="absolute top-full right-0 mt-2 w-64 bg-white rounded-2xl shadow-2xl border border-gray-100 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 transform translate-y-2 group-hover:translate-y-0 z-50 overflow-hidden before:content-[''] before:absolute before:-top-2.5 before:left-0 before:right-0 before:h-2.5">
+                    <!-- Dropdown Header -->
+                    <div class="px-4 py-2.5 bg-gradient-to-r from-blue-900 via-indigo-900 to-blue-950 text-white flex items-center justify-between">
+                        <div class="flex items-center space-x-2">
+                            <i class="fas fa-language text-blue-300 text-sm"></i>
+                            <span class="text-xs font-bold tracking-wide">Select Language</span>
+                        </div>
+                        <span class="text-[9px] bg-blue-800/80 text-blue-200 px-2 py-0.5 rounded-full font-medium" id="current-lang-sign">English</span>
+                    </div>
+
+                    <!-- Language Options List -->
+                    <div class="p-2 max-h-80 overflow-y-auto space-y-1 divide-y divide-gray-50">
+                        <!-- English -->
+                        <button type="button" onclick="window.asktrixChangeLang('en')" data-lang="en" class="lang-option w-full flex items-center justify-between px-3 py-2 rounded-xl text-xs hover:bg-blue-50 hover:text-blue-700 transition-colors group/item">
+                            <div class="flex items-center space-x-2.5">
+                                <span class="text-base leading-none">🇺🇸</span>
+                                <div class="text-left">
+                                    <div class="font-semibold text-gray-800 group-hover/item:text-blue-700">English</div>
+                                    <div class="text-[10px] text-gray-400">Default</div>
+                                </div>
+                            </div>
+                            <span class="lang-check text-blue-600 text-xs hidden"><i class="fas fa-check"></i></span>
+                        </button>
+
+                        <!-- Arabic -->
+                        <button type="button" onclick="window.asktrixChangeLang('ar')" data-lang="ar" class="lang-option w-full flex items-center justify-between px-3 py-2 rounded-xl text-xs hover:bg-blue-50 hover:text-blue-700 transition-colors group/item">
+                            <div class="flex items-center space-x-2.5">
+                                <span class="text-base leading-none">🇸🇦</span>
+                                <div class="text-left">
+                                    <div class="font-semibold text-gray-800 group-hover/item:text-blue-700">العربية</div>
+                                    <div class="text-[10px] text-gray-400">Arabic (RTL)</div>
+                                </div>
+                            </div>
+                            <span class="lang-check text-blue-600 text-xs hidden"><i class="fas fa-check"></i></span>
+                        </button>
+
+                        <!-- Russian -->
+                        <button type="button" onclick="window.asktrixChangeLang('ru')" data-lang="ru" class="lang-option w-full flex items-center justify-between px-3 py-2 rounded-xl text-xs hover:bg-blue-50 hover:text-blue-700 transition-colors group/item">
+                            <div class="flex items-center space-x-2.5">
+                                <span class="text-base leading-none">🇷🇺</span>
+                                <div class="text-left">
+                                    <div class="font-semibold text-gray-800 group-hover/item:text-blue-700">Русский</div>
+                                    <div class="text-[10px] text-gray-400">Russian</div>
+                                </div>
+                            </div>
+                            <span class="lang-check text-blue-600 text-xs hidden"><i class="fas fa-check"></i></span>
+                        </button>
+
+                        <!-- German -->
+                        <button type="button" onclick="window.asktrixChangeLang('de')" data-lang="de" class="lang-option w-full flex items-center justify-between px-3 py-2 rounded-xl text-xs hover:bg-blue-50 hover:text-blue-700 transition-colors group/item">
+                            <div class="flex items-center space-x-2.5">
+                                <span class="text-base leading-none">🇩🇪</span>
+                                <div class="text-left">
+                                    <div class="font-semibold text-gray-800 group-hover/item:text-blue-700">Deutsch</div>
+                                    <div class="text-[10px] text-gray-400">German</div>
+                                </div>
+                            </div>
+                            <span class="lang-check text-blue-600 text-xs hidden"><i class="fas fa-check"></i></span>
+                        </button>
+
+                        <!-- Spanish -->
+                        <button type="button" onclick="window.asktrixChangeLang('es')" data-lang="es" class="lang-option w-full flex items-center justify-between px-3 py-2 rounded-xl text-xs hover:bg-blue-50 hover:text-blue-700 transition-colors group/item">
+                            <div class="flex items-center space-x-2.5">
+                                <span class="text-base leading-none">🇪🇸</span>
+                                <div class="text-left">
+                                    <div class="font-semibold text-gray-800 group-hover/item:text-blue-700">Español</div>
+                                    <div class="text-[10px] text-gray-400">Spanish</div>
+                                </div>
+                            </div>
+                            <span class="lang-check text-blue-600 text-xs hidden"><i class="fas fa-check"></i></span>
+                        </button>
+
+                        <!-- French -->
+                        <button type="button" onclick="window.asktrixChangeLang('fr')" data-lang="fr" class="lang-option w-full flex items-center justify-between px-3 py-2 rounded-xl text-xs hover:bg-blue-50 hover:text-blue-700 transition-colors group/item">
+                            <div class="flex items-center space-x-2.5">
+                                <span class="text-base leading-none">🇫🇷</span>
+                                <div class="text-left">
+                                    <div class="font-semibold text-gray-800 group-hover/item:text-blue-700">Français</div>
+                                    <div class="text-[10px] text-gray-400">French</div>
+                                </div>
+                            </div>
+                            <span class="lang-check text-blue-600 text-xs hidden"><i class="fas fa-check"></i></span>
+                        </button>
+
+                        <!-- Malay Language (Bahasa Melayu) -->
+                        <button type="button" onclick="window.asktrixChangeLang('ms')" data-lang="ms" class="lang-option w-full flex items-center justify-between px-3 py-2 rounded-xl text-xs hover:bg-blue-50 hover:text-blue-700 transition-colors group/item">
+                            <div class="flex items-center space-x-2.5">
+                                <span class="text-base leading-none">🇲🇾</span>
+                                <div class="text-left">
+                                    <div class="font-semibold text-gray-800 group-hover/item:text-blue-700">Bahasa Melayu</div>
+                                    <div class="text-[10px] text-gray-400">Malay language</div>
+                                </div>
+                            </div>
+                            <span class="lang-check text-blue-600 text-xs hidden"><i class="fas fa-check"></i></span>
+                        </button>
+
+                        <!-- Hindi -->
+                        <button type="button" onclick="window.asktrixChangeLang('hi')" data-lang="hi" class="lang-option w-full flex items-center justify-between px-3 py-2 rounded-xl text-xs hover:bg-blue-50 hover:text-blue-700 transition-colors group/item">
+                            <div class="flex items-center space-x-2.5">
+                                <span class="text-base leading-none">🇮🇳</span>
+                                <div class="text-left">
+                                    <div class="font-semibold text-gray-800 group-hover/item:text-blue-700">हिन्दी</div>
+                                    <div class="text-[10px] text-gray-400">Hindi</div>
+                                </div>
+                            </div>
+                            <span class="lang-check text-blue-600 text-xs hidden"><i class="fas fa-check"></i></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
         </nav>
         
         <!-- CRM Button - Hidden on Mobile -->
@@ -155,6 +405,131 @@
     <!-- Mobile Menu -->
     <div class="md:hidden mt-4 hidden" id="mobile-menu">
         <nav class="flex flex-col space-y-2">
+            <!-- Mobile Language Switcher -->
+            <div class="mobile-nav-item notranslate" translate="no">
+                <button class="mobile-nav-header w-full text-left flex items-center justify-between p-3 bg-gradient-to-r from-blue-50 via-indigo-50 to-slate-50 border border-blue-100 rounded-lg text-blue-950 hover:bg-blue-100 transition-colors" onclick="toggleMobileNav('language')">
+                    <div class="flex items-center space-x-2.5">
+                        <span class="w-6 h-6 rounded-full bg-blue-600 text-white flex items-center justify-center text-xs shadow-xs">
+                            <i class="fas fa-globe text-[11px]"></i>
+                        </span>
+                        <div class="flex flex-col">
+                            <span class="font-bold text-xs text-gray-900">Select Language / भाषा चुनें</span>
+                            <span class="text-[10px] text-blue-700 font-medium" id="mobile-lang-display">Active: 🇺🇸 English (EN)</span>
+                        </div>
+                    </div>
+                    <i class="fas fa-chevron-down mobile-nav-icon text-xs text-blue-600 transition-transform duration-200" id="language-icon"></i>
+                </button>
+                <div class="mobile-nav-content hidden mt-2" id="language-content">
+                    <div class="grid grid-cols-2 gap-2 p-2 bg-slate-50 rounded-lg border border-gray-200/80">
+                        <button type="button" onclick="window.asktrixChangeLang('en')" data-lang="en" class="lang-option flex items-center space-x-2 p-2 rounded-lg bg-white border border-gray-100 text-left hover:border-blue-300">
+                            <span class="text-base">🇺🇸</span>
+                            <div class="text-[11px] leading-tight font-semibold text-gray-800">English</div>
+                        </button>
+                        <button type="button" onclick="window.asktrixChangeLang('ar')" data-lang="ar" class="lang-option flex items-center space-x-2 p-2 rounded-lg bg-white border border-gray-100 text-left hover:border-blue-300">
+                            <span class="text-base">🇸🇦</span>
+                            <div class="text-[11px] leading-tight font-semibold text-gray-800">العربية</div>
+                        </button>
+                        <button type="button" onclick="window.asktrixChangeLang('ru')" data-lang="ru" class="lang-option flex items-center space-x-2 p-2 rounded-lg bg-white border border-gray-100 text-left hover:border-blue-300">
+                            <span class="text-base">🇷🇺</span>
+                            <div class="text-[11px] leading-tight font-semibold text-gray-800">Русский</div>
+                        </button>
+                        <button type="button" onclick="window.asktrixChangeLang('de')" data-lang="de" class="lang-option flex items-center space-x-2 p-2 rounded-lg bg-white border border-gray-100 text-left hover:border-blue-300">
+                            <span class="text-base">🇩🇪</span>
+                            <div class="text-[11px] leading-tight font-semibold text-gray-800">Deutsch</div>
+                        </button>
+                        <button type="button" onclick="window.asktrixChangeLang('es')" data-lang="es" class="lang-option flex items-center space-x-2 p-2 rounded-lg bg-white border border-gray-100 text-left hover:border-blue-300">
+                            <span class="text-base">🇪🇸</span>
+                            <div class="text-[11px] leading-tight font-semibold text-gray-800">Español</div>
+                        </button>
+                        <button type="button" onclick="window.asktrixChangeLang('fr')" data-lang="fr" class="lang-option flex items-center space-x-2 p-2 rounded-lg bg-white border border-gray-100 text-left hover:border-blue-300">
+                            <span class="text-base">🇫🇷</span>
+                            <div class="text-[11px] leading-tight font-semibold text-gray-800">Français</div>
+                        </button>
+                        <button type="button" onclick="window.asktrixChangeLang('ms')" data-lang="ms" class="lang-option flex items-center space-x-2 p-2 rounded-lg bg-white border border-gray-100 text-left hover:border-blue-300">
+                            <span class="text-base">🇲🇾</span>
+                            <div class="text-[11px] leading-tight font-semibold text-gray-800">Bahasa Melayu (Malay)</div>
+                        </button>
+                        <button type="button" onclick="window.asktrixChangeLang('hi')" data-lang="hi" class="lang-option flex items-center space-x-2 p-2 rounded-lg bg-white border border-gray-100 text-left hover:border-blue-300">
+                            <span class="text-base">🇮🇳</span>
+                            <div class="text-[11px] leading-tight font-semibold text-gray-800">हिन्दी (Hindi)</div>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Services Dropdown (Digital, Web & AI Automation) -->
+            <div class="mobile-nav-item">
+                <button class="mobile-nav-header w-full text-left flex items-center justify-between p-3 bg-blue-50/80 text-blue-900 rounded-lg hover:bg-blue-100 transition-colors" onclick="toggleMobileNav('services')">
+                    <div class="flex items-center space-x-2">
+                        <span class="font-bold text-sm">Services (Software & AI)</span>
+                        <span class="px-1.5 py-0.5 bg-blue-600 text-[9px] font-bold text-white rounded-full leading-none">New</span>
+                    </div>
+                    <i class="fas fa-chevron-down mobile-nav-icon transition-transform duration-200" id="services-icon"></i>
+                </button>
+                <div class="mobile-nav-content hidden" id="services-content">
+                    <div class="mx-1 mt-2 space-y-1 pb-2 text-xs">
+                        <div class="text-[10px] font-bold uppercase tracking-wider text-gray-400 px-2 pt-2">Web & App Development</div>
+                        <a href="{{ route('website-development') }}" class="flex items-center justify-between px-2.5 py-1.5 rounded-lg text-gray-700 hover:text-blue-600 hover:bg-gray-50 transition-colors">
+                            <span class="font-semibold text-gray-800">Website Development</span>
+                            <span class="text-[11px] text-gray-500 font-medium">₹15,000 / $499</span>
+                        </a>
+                        <a href="{{ route('crm-development') }}" class="flex items-center justify-between px-2.5 py-1.5 rounded-lg text-gray-700 hover:text-blue-600 hover:bg-gray-50 transition-colors">
+                            <span class="font-semibold text-gray-800">CRM Development</span>
+                            <span class="text-[11px] text-gray-500 font-medium">₹35,000 / $1,499</span>
+                        </a>
+                        <a href="{{ route('saas-development') }}" class="flex items-center justify-between px-2.5 py-1.5 rounded-lg text-gray-700 hover:text-blue-600 hover:bg-gray-50 transition-colors">
+                            <span class="font-semibold text-gray-800">SaaS Product Dev</span>
+                            <span class="text-[11px] text-gray-500 font-medium">₹75,000 / $2,999</span>
+                        </a>
+                        <a href="{{ route('app-development') }}" class="flex items-center justify-between px-2.5 py-1.5 rounded-lg text-gray-700 hover:text-blue-600 hover:bg-gray-50 transition-colors">
+                            <span class="font-semibold text-gray-800">Mobile App Dev</span>
+                            <span class="text-[11px] text-gray-500 font-medium">₹50,000 / $1,999</span>
+                        </a>
+
+                        <div class="text-[10px] font-bold uppercase tracking-wider text-gray-400 px-2 pt-2.5">AI & Automation Solutions</div>
+                        <a href="{{ route('ai-workflow-automation') }}" class="flex items-center justify-between px-2.5 py-1.5 rounded-lg bg-purple-50/70 border border-purple-100 text-purple-900 hover:bg-purple-100 transition-colors">
+                            <div class="flex items-center space-x-1.5">
+                                <span class="font-bold text-purple-950">AI Workflow Auto</span>
+                                <span class="text-[8px] bg-purple-200 text-purple-800 px-1 py-0.2 rounded font-extrabold">HOT</span>
+                            </div>
+                            <span class="text-[11px] text-purple-700 font-semibold">₹4,999/mo / $99/mo</span>
+                        </a>
+                        <a href="{{ route('ai-customer-support-automation') }}" class="flex items-center justify-between px-2.5 py-1.5 rounded-lg text-gray-700 hover:text-blue-600 hover:bg-gray-50 transition-colors">
+                            <span class="font-semibold text-gray-800">AI Support Automation</span>
+                            <span class="text-[11px] text-gray-500 font-medium">₹3,999/mo / $49/mo</span>
+                        </a>
+                        <a href="{{ route('ai-voicebot-development') }}" class="flex items-center justify-between px-2.5 py-1.5 rounded-lg text-gray-700 hover:text-blue-600 hover:bg-gray-50 transition-colors">
+                            <span class="font-semibold text-gray-800">AI Voicebot Dev</span>
+                            <span class="text-[11px] text-gray-500 font-medium">₹25,000 / $799</span>
+                        </a>
+                        <a href="{{ route('ai-chatbot-development') }}" class="flex items-center justify-between px-2.5 py-1.5 rounded-lg text-gray-700 hover:text-blue-600 hover:bg-gray-50 transition-colors">
+                            <span class="font-semibold text-gray-800">AI Chatbot Dev</span>
+                            <span class="text-[11px] text-gray-500 font-medium">₹15,000 / $499</span>
+                        </a>
+
+                        <div class="text-[10px] font-bold uppercase tracking-wider text-gray-400 px-2 pt-2.5">Cloud & Infrastructure</div>
+                        <a href="{{ route('business-email') }}" class="flex items-center justify-between px-2.5 py-1.5 rounded-lg text-gray-700 hover:text-blue-600 hover:bg-gray-50 transition-colors">
+                            <span class="font-semibold text-gray-800">Business Email</span>
+                            <i class="fas fa-arrow-right text-[10px] text-gray-400"></i>
+                        </a>
+                        <a href="{{ route('domain-registration') }}" class="flex items-center justify-between px-2.5 py-1.5 rounded-lg text-gray-700 hover:text-blue-600 hover:bg-gray-50 transition-colors">
+                            <span class="font-semibold text-gray-800">Domain Registration</span>
+                            <i class="fas fa-arrow-right text-[10px] text-gray-400"></i>
+                        </a>
+                        <a href="{{ route('web-hosting') }}" class="flex items-center justify-between px-2.5 py-1.5 rounded-lg text-gray-700 hover:text-blue-600 hover:bg-gray-50 transition-colors">
+                            <span class="font-semibold text-gray-800">Web Hosting</span>
+                            <i class="fas fa-arrow-right text-[10px] text-gray-400"></i>
+                        </a>
+
+                        <div class="pt-2 px-1">
+                            <a href="{{ route('digital.services') }}" class="block bg-gradient-to-r from-blue-900 to-indigo-900 text-white text-center py-2.5 rounded-lg font-bold text-xs shadow-sm hover:from-blue-800 hover:to-indigo-800 transition-all">
+                                Explore All 11 Services & Full Price Book &rarr;
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <!-- Incorporation Dropdown -->
             <div class="mobile-nav-item">
                 <button class="mobile-nav-header w-full text-left flex items-center justify-between p-3 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors" onclick="toggleMobileNav('incorporation')">

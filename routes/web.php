@@ -12,8 +12,7 @@ use App\Http\Controllers\SitemapController;
 use App\Http\Controllers\PaymentController;
 
 
-// Fallback route for invalid URLs - redirect to home page
-Route::fallback(function () {return redirect('/');});
+use App\Http\Controllers\DigitalServiceController;
 
 // Home Route
 Route::get('/', function () {return view('home');})->name('home');
@@ -121,6 +120,25 @@ Route::get('director-disqualification', [RocController::class, 'directorDisquali
 Route::get('company-name-change', [RocController::class, 'companyNameChange'])->name('company-name-change');
 Route::get('authorized-capital', [RocController::class, 'authorizedCapital'])->name('authorized-capital');
 Route::get('change-of-registered-office', [RocController::class, 'changeOfRegisteredOffice'])->name('change-of-registered-office');
+
+// Digital, Web & AI Automation Services
+Route::get('services', [DigitalServiceController::class, 'index'])->name('digital.services');
+Route::get('website-development', [DigitalServiceController::class, 'websiteDevelopment'])->name('website-development');
+Route::get('crm-development', [DigitalServiceController::class, 'crmDevelopment'])->name('crm-development');
+Route::get('saas-development', [DigitalServiceController::class, 'saasDevelopment'])->name('saas-development');
+Route::get('ai-voicebot-development', [DigitalServiceController::class, 'aiVoicebotDevelopment'])->name('ai-voicebot-development');
+Route::get('app-development', [DigitalServiceController::class, 'appDevelopment'])->name('app-development');
+Route::get('business-email', [DigitalServiceController::class, 'businessEmail'])->name('business-email');
+Route::get('domain-registration', [DigitalServiceController::class, 'domainRegistration'])->name('domain-registration');
+Route::get('web-hosting', [DigitalServiceController::class, 'webHosting'])->name('web-hosting');
+Route::get('ai-chatbot-development', [DigitalServiceController::class, 'aiChatbotDevelopment'])->name('ai-chatbot-development');
+Route::get('ai-workflow-automation', [DigitalServiceController::class, 'aiWorkflowAutomation'])->name('ai-workflow-automation');
+Route::get('ai-customer-support-automation', [DigitalServiceController::class, 'aiCustomerSupportAutomation'])->name('ai-customer-support-automation');
+
+// Fallback route for invalid URLs - redirect to home page
+Route::fallback(function () {
+    return redirect('/');
+});
 
 
 

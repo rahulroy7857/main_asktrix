@@ -97,6 +97,20 @@ class SitemapController extends Controller
             ['loc' => $baseUrl . '/company-name-change/', 'priority' => '0.8'],
             ['loc' => $baseUrl . '/authorized-capital/', 'priority' => '0.8'],
             ['loc' => $baseUrl . '/change-of-registered-office/', 'priority' => '0.8'],
+
+            // Digital, Web & AI Services
+            ['loc' => $baseUrl . '/services', 'priority' => '0.9', 'changefreq' => 'weekly'],
+            ['loc' => $baseUrl . '/website-development', 'priority' => '0.8'],
+            ['loc' => $baseUrl . '/crm-development', 'priority' => '0.8'],
+            ['loc' => $baseUrl . '/saas-development', 'priority' => '0.8'],
+            ['loc' => $baseUrl . '/ai-voicebot-development', 'priority' => '0.8'],
+            ['loc' => $baseUrl . '/app-development', 'priority' => '0.8'],
+            ['loc' => $baseUrl . '/business-email', 'priority' => '0.8'],
+            ['loc' => $baseUrl . '/domain-registration', 'priority' => '0.8'],
+            ['loc' => $baseUrl . '/web-hosting', 'priority' => '0.8'],
+            ['loc' => $baseUrl . '/ai-chatbot-development', 'priority' => '0.8'],
+            ['loc' => $baseUrl . '/ai-workflow-automation', 'priority' => '0.8'],
+            ['loc' => $baseUrl . '/ai-customer-support-automation', 'priority' => '0.8'],
         ];
         
         $xml = '<?xml version="1.0" encoding="UTF-8"?>' . "\n";

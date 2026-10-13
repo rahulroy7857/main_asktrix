@@ -5,6 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="csrf-token" content="{{ csrf_token() }}">
     
+    <!-- Early Language & Direction Init to avoid Flash of Untranslated/LTR State -->
+    <script>
+        (function() {
+            try {
+                var savedLang = localStorage.getItem('asktrix_lang');
+                if (!savedLang) {
+                    var m = document.cookie.match(/googtrans=\/en\/([a-z]{2})/i);
+                    if (m && m[1]) savedLang = m[1].toLowerCase();
+                }
+                if (savedLang === 'ar') {
+                    document.documentElement.setAttribute('dir', 'rtl');
+                    document.documentElement.setAttribute('lang', 'ar');
+                }
+            } catch(e) {}
+        })();
+    </script>
     <!-- Primary Meta Tags -->
     <title>@yield('title', 'Asktrix | Asktrix.com - Business Consulting Services India')</title>
     <meta name="title" content="@yield('meta_title', 'Asktrix | #1 Business Consulting Services - GST, Company Registration India')">
@@ -431,6 +447,93 @@
             background-color: #dcfce7;
             border-color: #86efac;
         }
+
+        /* =======================================================
+           Google Translate & Multi-Language UI Controls
+           ======================================================= */
+        /* Completely hide Google Translate default top banner & popup frames */
+        .goog-te-banner-frame.skiptranslate,
+        .goog-te-banner-frame,
+        iframe.goog-te-banner-frame,
+        iframe[id=":1.container"],
+        iframe[id=":2.container"] {
+            display: none !important;
+            visibility: hidden !important;
+            height: 0 !important;
+            width: 0 !important;
+        }
+
+        body {
+            top: 0px !important;
+            position: static !important;
+        }
+
+        #google_translate_element {
+            position: absolute !important;
+            top: -9999px !important;
+            left: -9999px !important;
+            width: 1px !important;
+            height: 1px !important;
+            overflow: hidden !important;
+            opacity: 0 !important;
+            pointer-events: none !important;
+        }
+
+        /* Hide Google Translate tooltip highlights & ballons */
+        #goog-gt-tt,
+        .goog-te-balloon-frame,
+        .goog-tooltip,
+        .goog-tooltip:hover {
+            display: none !important;
+            visibility: hidden !important;
+            opacity: 0 !important;
+            pointer-events: none !important;
+        }
+
+        .goog-text-highlight {
+            background-color: transparent !important;
+            box-shadow: none !important;
+            border: none !important;
+        }
+
+        /* Hide Google top branding bar */
+        body > .skiptranslate {
+            display: none !important;
+        }
+
+        /* RTL (Arabic) Styles */
+        html[dir="rtl"] {
+            direction: rtl;
+            text-align: right;
+        }
+
+        html[dir="rtl"] body {
+            direction: rtl;
+            text-align: right;
+        }
+
+        html[dir="rtl"] .space-x-1\.5 > :not([hidden]) ~ :not([hidden]),
+        html[dir="rtl"] .space-x-2 > :not([hidden]) ~ :not([hidden]),
+        html[dir="rtl"] .space-x-2\.5 > :not([hidden]) ~ :not([hidden]),
+        html[dir="rtl"] .space-x-3 > :not([hidden]) ~ :not([hidden]),
+        html[dir="rtl"] .space-x-3\.5 > :not([hidden]) ~ :not([hidden]),
+        html[dir="rtl"] .space-x-4 > :not([hidden]) ~ :not([hidden]),
+        html[dir="rtl"] .space-x-5 > :not([hidden]) ~ :not([hidden]),
+        html[dir="rtl"] .space-x-6 > :not([hidden]) ~ :not([hidden]),
+        html[dir="rtl"] .space-x-8 > :not([hidden]) ~ :not([hidden]) {
+            --tw-space-x-reverse: 1;
+        }
+
+        html[dir="rtl"] .fa-arrow-right,
+        html[dir="rtl"] .fa-chevron-right {
+            transform: scaleX(-1);
+        }
+
+        html[dir="rtl"] .whatsapp-widget,
+        html[dir="rtl"] .scroll-to-top {
+            right: auto;
+            left: 20px;
+        }
     </style>
     @yield('styles')
     
@@ -634,5 +737,160 @@
     </script>
     
     @yield('scripts')
+
+    <!-- Google Translate Element (Off-Screen Hidden Container) -->
+    <div id="google_translate_element" style="position: absolute; left: -9999px; top: -9999px; width: 1px; height: 1px; overflow: hidden; opacity: 0; pointer-events: none;"></div>
+
+    <!-- Asktrix Multi-Language Manager -->
+    <script>
+        (function() {
+            const LANG_CONFIG = {
+                'en': { name: 'English', native: 'English', flag: '🇺🇸', symbol: 'EN', dir: 'ltr', signBadge: 'English' },
+                'ar': { name: 'Arabic', native: 'العربية', flag: '🇸🇦', symbol: 'عربي', dir: 'rtl', signBadge: 'العربية' },
+                'ru': { name: 'Russian', native: 'Русский', flag: '🇷🇺', symbol: 'РУС', dir: 'ltr', signBadge: 'Русский' },
+                'de': { name: 'German', native: 'Deutsch', flag: '🇩🇪', symbol: 'DE', dir: 'ltr', signBadge: 'Deutsch' },
+                'es': { name: 'Spanish', native: 'Español', flag: '🇪🇸', symbol: 'ES', dir: 'ltr', signBadge: 'Español' },
+                'fr': { name: 'French', native: 'Français', flag: '🇫🇷', symbol: 'FR', dir: 'ltr', signBadge: 'Français' },
+                'ms': { name: 'Malay language', native: 'Bahasa Melayu', flag: '🇲🇾', symbol: 'MS', dir: 'ltr', signBadge: 'Melayu' },
+                'hi': { name: 'Hindi', native: 'हिन्दी', flag: '🇮🇳', symbol: 'हिं', dir: 'ltr', signBadge: 'हिन्दी' }
+            };
+
+            function getSelectedLang() {
+                const stored = localStorage.getItem('asktrix_lang');
+                if (stored && LANG_CONFIG[stored]) return stored;
+                const m = document.cookie.match(/googtrans=\/en\/([a-z]{2})/i);
+                if (m && m[1] && LANG_CONFIG[m[1].toLowerCase()]) return m[1].toLowerCase();
+                return 'en';
+            }
+
+            function setGoogleTransCookie(code) {
+                const cookieVal = (code === 'en') ? '' : ('/en/' + code);
+                const expires = (code === 'en') 
+                    ? 'Thu, 01 Jan 1970 00:00:00 UTC' 
+                    : new Date(Date.now() + 365 * 24 * 60 * 60 * 1000).toUTCString();
+
+                const domain = window.location.hostname;
+                document.cookie = 'googtrans=' + cookieVal + '; path=/; expires=' + expires + ';';
+                document.cookie = 'googtrans=' + cookieVal + '; path=/; domain=' + domain + '; expires=' + expires + ';';
+                if (domain.indexOf('.') !== -1 && !/^\d+$/.test(domain.replace(/\./g, ''))) {
+                    document.cookie = 'googtrans=' + cookieVal + '; path=/; domain=.' + domain + '; expires=' + expires + ';';
+                }
+            }
+
+            function syncLanguageUI(code) {
+                const cfg = LANG_CONFIG[code] || LANG_CONFIG['en'];
+
+                // Update document attributes
+                if (cfg.dir === 'rtl') {
+                    document.documentElement.setAttribute('dir', 'rtl');
+                    document.documentElement.setAttribute('lang', 'ar');
+                    document.body.classList.add('rtl-mode');
+                } else {
+                    document.documentElement.setAttribute('dir', 'ltr');
+                    document.documentElement.setAttribute('lang', code);
+                    document.body.classList.remove('rtl-mode');
+                }
+
+                // Update Desktop Switcher trigger
+                const desktopFlag = document.getElementById('desktop-lang-flag');
+                const desktopCode = document.getElementById('desktop-lang-code');
+                const desktopSign = document.getElementById('current-lang-sign');
+                if (desktopFlag) desktopFlag.textContent = cfg.flag;
+                if (desktopCode) desktopCode.textContent = cfg.symbol;
+                if (desktopSign) desktopSign.textContent = cfg.signBadge;
+
+                // Update Mobile Switcher trigger
+                const mobileDisplay = document.getElementById('mobile-lang-display');
+                if (mobileDisplay) {
+                    mobileDisplay.textContent = 'Active: ' + cfg.flag + ' ' + cfg.native + ' (' + cfg.symbol + ')';
+                }
+
+                // Highlight active options
+                document.querySelectorAll('.lang-option').forEach(function(el) {
+                    const elLang = el.getAttribute('data-lang');
+                    const check = el.querySelector('.lang-check');
+                    if (elLang === code) {
+                        el.classList.add('bg-blue-50', 'text-blue-700', 'font-bold');
+                        if (check) check.classList.remove('hidden');
+                    } else {
+                        el.classList.remove('bg-blue-50', 'text-blue-700', 'font-bold');
+                        if (check) check.classList.add('hidden');
+                    }
+                });
+            }
+
+            window.asktrixChangeLang = function(code) {
+                if (!LANG_CONFIG[code]) code = 'en';
+
+                localStorage.setItem('asktrix_lang', code);
+                setGoogleTransCookie(code);
+                syncLanguageUI(code);
+
+                // If switching back to English, clear google translate and cleanly reload
+                if (code === 'en') {
+                    document.cookie = "googtrans=; path=/; expires=Thu, 01 Jan 1970 00:00:00 UTC;";
+                    document.cookie = "googtrans=; path=/; domain=" + window.location.hostname + "; expires=Thu, 01 Jan 1970 00:00:00 UTC;";
+                    document.cookie = "googtrans=/en/en; path=/;";
+                    
+                    const select = document.querySelector('.goog-te-combo');
+                    if (select) {
+                        select.value = 'en';
+                        select.dispatchEvent(new Event('change'));
+                    }
+                    setTimeout(function() {
+                        window.location.reload();
+                    }, 200);
+                    return;
+                }
+
+                // Dispatch event to Google Translate combo
+                const select = document.querySelector('.goog-te-combo');
+                if (select) {
+                    select.value = code;
+                    select.dispatchEvent(new Event('change'));
+                } else {
+                    // In case script is still loading, reload page with cookie set
+                    window.location.reload();
+                }
+            };
+
+            // Google Translate Element Init Callback
+            window.googleTranslateElementInit = function() {
+                try {
+                    new google.translate.TranslateElement({
+                        pageLanguage: 'en',
+                        includedLanguages: 'en,ar,ru,de,es,fr,ms,hi',
+                        autoDisplay: false
+                    }, 'google_translate_element');
+
+                    // Sync select combo with current active language once loaded
+                    let attempts = 0;
+                    const checkInterval = setInterval(function() {
+                        attempts++;
+                        const select = document.querySelector('.goog-te-combo');
+                        const activeLang = getSelectedLang();
+                        if (select) {
+                            if (activeLang && activeLang !== 'en' && select.value !== activeLang) {
+                                select.value = activeLang;
+                                select.dispatchEvent(new Event('change'));
+                            }
+                            clearInterval(checkInterval);
+                        } else if (attempts > 30) {
+                            clearInterval(checkInterval);
+                        }
+                    }, 150);
+                } catch(err) {
+                    console.warn('Google Translate Init notice:', err);
+                }
+            };
+
+            // On DOM loaded
+            document.addEventListener('DOMContentLoaded', function() {
+                const active = getSelectedLang();
+                syncLanguageUI(active);
+            });
+        })();
+    </script>
+    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 </body>
 </html>
